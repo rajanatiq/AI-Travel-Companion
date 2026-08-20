@@ -1,0 +1,574 @@
+-- ============================================================================
+-- AI Travel Companion — Complete SQL Server (T-SQL) Database Schema
+-- Compatible with: SQL Server 2016+, 2019, 2022, Azure SQL Database
+-- ============================================================================
+
+-- 1. DATABASE CREATION
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'AITravelCompanionDB')
+BEGIN
+    CREATE DATABASE AITravelCompanionDB;
+END
+GO
+
+USE AITravelCompanionDB;
+GO
+
+-- ============================================================================
+-- 2. TABLE DEFINITIONS
+-- ============================================================================
+
+-------------------------------------------------------------------------------
+-- 1. USERS TABLE
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.users', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.users (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        email NVARCHAR(255) NOT NULL,
+        password_hash NVARCHAR(255) NOT NULL,
+        home_locale NVARCHAR(10) NOT NULL DEFAULT 'en',
+        created_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+        updated_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT uq_users_email UNIQUE (email),
+        CONSTRAINT chk_users_email_valid CHECK (email LIKE '%_@__%.__%')
+    );
+
+    CREATE NONCLUSTERED INDEX idx_users_email ON dbo.users(email);
+    CREATE NONCLUSTERED INDEX idx_users_created_at ON dbo.users(created_at DESC);
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 2. PREFERENCES TABLE (1-to-1 with users)
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.preferences', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.preferences (
+        user_id UNIQUEIDENTIFIER PRIMARY KEY,
+        interests NVARCHAR(MAX) NOT NULL DEFAULT '[]', -- JSON Array format: '["history", "food", "art"]'
+        pace_preference NVARCHAR(20) NOT NULL DEFAULT 'relaxed',
+        default_budget_tier INT NOT NULL DEFAULT 2,
+        updated_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT fk_preferences_users FOREIGN KEY (user_id) 
+            REFERENCES dbo.users(id) ON DELETE CASCADE,
+        CONSTRAINT chk_preferences_pace CHECK (pace_preference IN ('relaxed', 'balanced', 'packed')),
+        CONSTRAINT chk_preferences_budget CHECK (default_budget_tier BETWEEN 1 AND 4),
+        CONSTRAINT chk_preferences_interests_json CHECK (ISJSON(interests) = 1)
+    );
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 3. TRIPS TABLE
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.trips', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.trips (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        user_id UNIQUEIDENTIFIER NOT NULL,
+        destination NVARCHAR(255) NOT NULL,
+        start_date DATE NOT NULL,
+        end_date DATE NOT NULL,
+        budget_total DECIMAL(10, 2) NOT NULL,
+        interests NVARCHAR(MAX) NOT NULL DEFAULT '[]', -- JSON Array format
+        pace NVARCHAR(20) NOT NULL DEFAULT 'balanced',
+        status NVARCHAR(20) NOT NULL DEFAULT 'draft',
+        created_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+        updated_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT fk_trips_users FOREIGN KEY (user_id) 
+            REFERENCES dbo.users(id) ON DELETE CASCADE,
+        CONSTRAINT chk_trips_dates CHECK (end_date >= start_date),
+        CONSTRAINT chk_trips_budget CHECK (budget_total > 0),
+        CONSTRAINT chk_trips_status CHECK (status IN ('draft', 'confirmed', 'completed', 'archived')),
+        CONSTRAINT chk_trips_pace CHECK (pace IN ('relaxed', 'balanced', 'packed')),
+        CONSTRAINT chk_trips_interests_json CHECK (ISJSON(interests) = 1)
+    );
+
+    CREATE NONCLUSTERED INDEX idx_trips_user_id ON dbo.trips(user_id);
+    CREATE NONCLUSTERED INDEX idx_trips_start_date ON dbo.trips(start_date DESC);
+    CREATE NONCLUSTERED INDEX idx_trips_status ON dbo.trips(status);
+    CREATE NONCLUSTERED INDEX idx_trips_user_created ON dbo.trips(user_id, created_at DESC);
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 4. ITINERARY_ITEMS TABLE
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.itinerary_items', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.itinerary_items (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        trip_id UNIQUEIDENTIFIER NOT NULL,
+        day_index INT NOT NULL,
+        order_index INT NOT NULL,
+        place_id NVARCHAR(255) NULL,
+        name NVARCHAR(255) NOT NULL,
+        category NVARCHAR(50) NOT NULL,
+        scheduled_time TIME(0) NOT NULL,
+        duration_min INT NOT NULL,
+        est_cost DECIMAL(10, 2) NULL,
+        crowd_level NVARCHAR(20) NULL,
+        lat DECIMAL(10, 6) NULL,
+        lon DECIMAL(10, 6) NULL,
+        geo_location GEOGRAPHY NULL, -- Populated via Trigger/App for spatial queries
+        opening_hours NVARCHAR(MAX) NULL, -- JSON Object format
+        notes NVARCHAR(MAX) NULL,
+        user_edited BIT NOT NULL DEFAULT 0,
+        created_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+        updated_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT fk_itinerary_trips FOREIGN KEY (trip_id) 
+            REFERENCES dbo.trips(id) ON DELETE CASCADE,
+        CONSTRAINT uq_itinerary_trip_day_order UNIQUE (trip_id, day_index, order_index),
+        CONSTRAINT chk_itinerary_day CHECK (day_index >= 0),
+        CONSTRAINT chk_itinerary_order CHECK (order_index >= 0),
+        CONSTRAINT chk_itinerary_duration CHECK (duration_min > 0),
+        CONSTRAINT chk_itinerary_cost CHECK (est_cost IS NULL OR est_cost > 0),
+        CONSTRAINT chk_itinerary_crowd CHECK (crowd_level IS NULL OR crowd_level IN ('low', 'medium', 'high')),
+        CONSTRAINT chk_itinerary_category CHECK (category IN (
+            'history', 'food', 'nature', 'nightlife', 'art', 'adventure', 
+            'family', 'shopping', 'culture', 'meal', 'transport'
+        )),
+        CONSTRAINT chk_itinerary_opening_hours_json CHECK (opening_hours IS NULL OR ISJSON(opening_hours) = 1)
+    );
+
+    CREATE NONCLUSTERED INDEX idx_itinerary_trip ON dbo.itinerary_items(trip_id);
+    CREATE NONCLUSTERED INDEX idx_itinerary_day ON dbo.itinerary_items(trip_id, day_index);
+    
+    -- Filtered Index for items edited by user
+    CREATE NONCLUSTERED INDEX idx_itinerary_user_edited ON dbo.itinerary_items(trip_id) 
+        WHERE user_edited = 1;
+
+    -- Spatial Index for Geospatial Distance Queries
+    CREATE SPATIAL INDEX sx_itinerary_geo ON dbo.itinerary_items(geo_location);
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 5. EXPENSES TABLE (Real-Time & Offline Budget Tracking)
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.expenses', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.expenses (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        trip_id UNIQUEIDENTIFIER NOT NULL,
+        category NVARCHAR(50) NOT NULL,
+        amount DECIMAL(10, 2) NOT NULL,
+        currency NVARCHAR(3) NOT NULL DEFAULT 'USD',
+        note NVARCHAR(MAX) NULL,
+        logged_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+        synced_at DATETIMEOFFSET NULL,
+
+        CONSTRAINT fk_expenses_trips FOREIGN KEY (trip_id) 
+            REFERENCES dbo.trips(id) ON DELETE CASCADE,
+        CONSTRAINT chk_expenses_amount CHECK (amount > 0),
+        CONSTRAINT chk_expenses_category CHECK (category IN (
+            'meals', 'transport', 'activity', 'accommodation', 'shopping', 'other'
+        )),
+        CONSTRAINT chk_expenses_currency CHECK (LEN(currency) = 3 AND currency NOT LIKE '%[^A-Z]%')
+    );
+
+    CREATE NONCLUSTERED INDEX idx_expenses_trip ON dbo.expenses(trip_id);
+    CREATE NONCLUSTERED INDEX idx_expenses_logged ON dbo.expenses(trip_id, logged_at DESC);
+    
+    -- Filtered Index to quickly pull unsynced records for offline sync engine
+    CREATE NONCLUSTERED INDEX idx_expenses_synced ON dbo.expenses(trip_id) 
+        WHERE synced_at IS NULL;
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 6. PLACES_CACHE TABLE (External Places API Cache)
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.places_cache', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.places_cache (
+        place_id NVARCHAR(255) PRIMARY KEY,
+        name NVARCHAR(255) NOT NULL,
+        category NVARCHAR(50) NOT NULL,
+        lat DECIMAL(10, 6) NULL,
+        lon DECIMAL(10, 6) NULL,
+        geo_location GEOGRAPHY NULL,
+        price_tier INT NULL,
+        rating DECIMAL(3, 2) NULL,
+        opening_hours NVARCHAR(MAX) NULL, -- JSON Object format
+        visit_duration_min INT NULL,
+        description NVARCHAR(MAX) NULL,
+        photo_url NVARCHAR(2048) NULL,
+        last_fetched DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT chk_places_price CHECK (price_tier IS NULL OR price_tier BETWEEN 1 AND 4),
+        CONSTRAINT chk_places_rating CHECK (rating IS NULL OR (rating >= 1.0 AND rating <= 5.0)),
+        CONSTRAINT chk_places_category CHECK (category IN (
+            'history', 'food', 'nature', 'nightlife', 'art', 'adventure', 
+            'family', 'shopping', 'culture'
+        )),
+        CONSTRAINT chk_places_opening_hours_json CHECK (opening_hours IS NULL OR ISJSON(opening_hours) = 1)
+    );
+
+    CREATE NONCLUSTERED INDEX idx_places_category ON dbo.places_cache(category);
+    CREATE NONCLUSTERED INDEX idx_places_rating ON dbo.places_cache(rating DESC);
+    CREATE NONCLUSTERED INDEX idx_places_last_fetched ON dbo.places_cache(last_fetched);
+
+    -- Spatial Index for Nearby Attractions Search
+    CREATE SPATIAL INDEX sx_places_geo ON dbo.places_cache(geo_location);
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 7. WEATHER_CACHE TABLE
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.weather_cache', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.weather_cache (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        destination NVARCHAR(255) NOT NULL,
+        forecast_date DATE NOT NULL,
+        temp_high DECIMAL(5, 2) NULL,
+        temp_low DECIMAL(5, 2) NULL,
+        condition NVARCHAR(100) NULL,
+        humidity INT NULL,
+        wind_speed DECIMAL(5, 2) NULL,
+        cached_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT uq_weather_destination_date UNIQUE (destination, forecast_date)
+    );
+
+    CREATE NONCLUSTERED INDEX idx_weather_destination ON dbo.weather_cache(destination, forecast_date DESC);
+END
+GO
+
+-------------------------------------------------------------------------------
+-- 8. EVENTS_CACHE TABLE
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.events_cache', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.events_cache (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        destination NVARCHAR(255) NOT NULL,
+        event_date DATE NOT NULL,
+        name NVARCHAR(255) NOT NULL,
+        category NVARCHAR(100) NULL,
+        url NVARCHAR(2048) NULL,
+        cached_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT uq_events_destination_date_name UNIQUE (destination, event_date, name)
+    );
+
+    CREATE NONCLUSTERED INDEX idx_events_destination ON dbo.events_cache(destination, event_date);
+END
+GO
+
+-- ============================================================================
+-- 3. TRIGGERS (Auto-sync Spatial Points & `updated_at` Auditing)
+-- ============================================================================
+
+-------------------------------------------------------------------------------
+-- Triggers for Geo-spatial location calculation (Lat/Lon -> Geography Point)
+-------------------------------------------------------------------------------
+CREATE OR ALTER TRIGGER trg_itinerary_items_geography
+ON dbo.itinerary_items
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF UPDATE(lat) OR UPDATE(lon)
+    BEGIN
+        UPDATE t
+        SET geo_location = CASE 
+            WHEN i.lat IS NOT NULL AND i.lon IS NOT NULL 
+            THEN geography::Point(i.lat, i.lon, 4326)
+            ELSE NULL 
+        END
+        FROM dbo.itinerary_items t
+        INNER JOIN inserted i ON t.id = i.id;
+    END
+END;
+GO
+
+CREATE OR ALTER TRIGGER trg_places_cache_geography
+ON dbo.places_cache
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF UPDATE(lat) OR UPDATE(lon)
+    BEGIN
+        UPDATE p
+        SET geo_location = CASE 
+            WHEN i.lat IS NOT NULL AND i.lon IS NOT NULL 
+            THEN geography::Point(i.lat, i.lon, 4326)
+            ELSE NULL 
+        END
+        FROM dbo.places_cache p
+        INNER JOIN inserted i ON p.place_id = i.place_id;
+    END
+END;
+GO
+
+-------------------------------------------------------------------------------
+-- Triggers for `updated_at` timestamp management
+-------------------------------------------------------------------------------
+CREATE OR ALTER TRIGGER trg_users_updated_at
+ON dbo.users
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF NOT UPDATE(updated_at)
+    BEGIN
+        UPDATE u
+        SET updated_at = SYSDATETIMEOFFSET()
+        FROM dbo.users u
+        INNER JOIN inserted i ON u.id = i.id;
+    END
+END;
+GO
+
+CREATE OR ALTER TRIGGER trg_preferences_updated_at
+ON dbo.preferences
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF NOT UPDATE(updated_at)
+    BEGIN
+        UPDATE p
+        SET updated_at = SYSDATETIMEOFFSET()
+        FROM dbo.preferences p
+        INNER JOIN inserted i ON p.user_id = i.user_id;
+    END
+END;
+GO
+
+CREATE OR ALTER TRIGGER trg_trips_updated_at
+ON dbo.trips
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF NOT UPDATE(updated_at)
+    BEGIN
+        UPDATE t
+        SET updated_at = SYSDATETIMEOFFSET()
+        FROM dbo.trips t
+        INNER JOIN inserted i ON t.id = i.id;
+    END
+END;
+GO
+
+CREATE OR ALTER TRIGGER trg_itinerary_items_updated_at
+ON dbo.itinerary_items
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF NOT UPDATE(updated_at)
+    BEGIN
+        UPDATE item
+        SET updated_at = SYSDATETIMEOFFSET()
+        FROM dbo.itinerary_items item
+        INNER JOIN inserted i ON item.id = i.id;
+    END
+END;
+GO
+
+-- ============================================================================
+-- 4. COMMONLY USED OPTIMIZED QUERIES (Examples for Backend Devs)
+-- ============================================================================
+
+/*
+-- [QUERY 1]: Find places within X meters of given (lat, lon) using Spatial Index
+DECLARE @search_lat DECIMAL(10, 6) = 35.6762;
+DECLARE @search_lon DECIMAL(10, 6) = 139.6503;
+DECLARE @radius_meters FLOAT = 2000; -- 2 KM
+
+DECLARE @center_point GEOGRAPHY = geography::Point(@search_lat, @search_lon, 4326);
+
+SELECT 
+    place_id,
+    name,
+    category,
+    rating,
+    price_tier,
+    geo_location.STDistance(@center_point) AS distance_in_meters
+FROM dbo.places_cache
+WHERE geo_location IS NOT NULL
+  AND geo_location.STDistance(@center_point) <= @radius_meters
+ORDER BY distance_in_meters ASC;
+
+
+-- [QUERY 2]: Trip Budget vs Actual Spending
+DECLARE @trip_id UNIQUEIDENTIFIER = '...';
+
+SELECT 
+    t.id AS trip_id,
+    t.destination,
+    t.budget_total,
+    ISNULL(SUM(e.amount), 0) AS total_spent,
+    (t.budget_total - ISNULL(SUM(e.amount), 0)) AS remaining_budget
+FROM dbo.trips t
+LEFT JOIN dbo.expenses e ON t.id = e.trip_id
+WHERE t.id = @trip_id
+GROUP BY t.id, t.destination, t.budget_total;
+
+
+-- [QUERY 3]: Parse JSON Interests from Preferences using OPENJSON
+SELECT 
+    p.user_id,
+    interest.value AS interest_item
+FROM dbo.preferences p
+CROSS APPLY OPENJSON(p.interests) AS interest;
+*/
+
+-- ============================================================================
+-- Migration: Add User Profile & Traveler Info to dbo.users
+-- Compatible with: SQL Server 2016+, 2019, 2022, Azure SQL Database
+-- ============================================================================
+
+USE AITravelCompanionDB;
+GO
+
+-- 1. Add full_name
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'full_name'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD full_name NVARCHAR(255) NULL;
+    PRINT 'Column full_name added to dbo.users';
+END
+GO
+
+-- 2. Add phone_number
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'phone_number'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD phone_number NVARCHAR(50) NULL;
+    PRINT 'Column phone_number added to dbo.users';
+END
+GO
+
+-- 3. Add age (with optional validity check constraint)
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'age'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD age INT NULL;
+
+    ALTER TABLE dbo.users
+    ADD CONSTRAINT chk_users_age CHECK (age IS NULL OR (age >= 1 AND age <= 130));
+    
+    PRINT 'Column age and constraint chk_users_age added to dbo.users';
+END
+GO
+
+-- 4. Add country
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'country'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD country NVARCHAR(100) NULL;
+    PRINT 'Column country added to dbo.users';
+END
+GO
+
+-- 5. Add city
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'city'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD city NVARCHAR(100) NULL;
+    PRINT 'Column city added to dbo.users';
+END
+GO
+
+-- 6. Add bio
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'bio'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD bio NVARCHAR(MAX) NULL;
+    PRINT 'Column bio added to dbo.users';
+END
+GO
+
+-- 7. Add avatar_url
+IF NOT EXISTS (
+    SELECT 1 FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'dbo.users') AND name = N'avatar_url'
+)
+BEGIN
+    ALTER TABLE dbo.users
+    ADD avatar_url NVARCHAR(2048) NULL;
+    PRINT 'Column avatar_url added to dbo.users';
+END
+GO
+
+-- Verification Query
+SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'users';
+GO
+
+-------------------------------------------------------------------------------
+-- 1. USERS TABLE (Updated with Traveler Profile fields)
+-------------------------------------------------------------------------------
+IF OBJECT_ID('dbo.users', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.users (
+        id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+        email NVARCHAR(255) NOT NULL,
+        password_hash NVARCHAR(255) NOT NULL,
+        full_name NVARCHAR(255) NULL,
+        phone_number NVARCHAR(50) NULL,
+        age INT NULL,
+        country NVARCHAR(100) NULL,
+        city NVARCHAR(100) NULL,
+        bio NVARCHAR(MAX) NULL,
+        avatar_url NVARCHAR(2048) NULL,
+        home_locale NVARCHAR(10) NOT NULL DEFAULT 'en',
+        created_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+        updated_at DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+
+        CONSTRAINT uq_users_email UNIQUE (email),
+        CONSTRAINT chk_users_email_valid CHECK (email LIKE '%_@__%.__%'),
+        CONSTRAINT chk_users_age CHECK (age IS NULL OR (age >= 1 AND age <= 130))
+    );
+
+    CREATE NONCLUSTERED INDEX idx_users_email ON dbo.users(email);
+    CREATE NONCLUSTERED INDEX idx_users_created_at ON dbo.users(created_at DESC);
+END
+GO
+
+
+USE AITravelCompanionDB;
+GO
+
+CREATE TABLE dbo.ratings (
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    user_id UNIQUEIDENTIFIER NOT NULL,
+    trip_id UNIQUEIDENTIFIER NOT NULL,
+    score INT NOT NULL CHECK (score >= 1 AND score <= 5),
+    review NVARCHAR(MAX) NULL,
+    created_at DATETIME2 DEFAULT GETUTCDATE(),
+    updated_at DATETIME2 DEFAULT GETUTCDATE(),
+    CONSTRAINT FK_Ratings_User FOREIGN KEY (user_id) REFERENCES dbo.users(id) ON DELETE CASCADE,
+    CONSTRAINT FK_Ratings_Trip FOREIGN KEY (trip_id) REFERENCES dbo.trips(id) ON DELETE NO ACTION
+);
+

@@ -1,0 +1,1264 @@
+[
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "places": [
+      "Sensō-ji Temple",
+      "Shibuya Crossing",
+      "Tokyo Skytree",
+      "Meiji Shrine"
+    ]
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "places": [
+      "CN Tower",
+      "Royal Ontario Museum",
+      "Ripley's Aquarium",
+      "Distillery District"
+    ]
+  },
+  {
+    "city": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.033,
+    "lon": 121.5654,
+    "places": [
+      "Taipei 101",
+      "Shilin Night Market",
+      "National Palace Museum",
+      "Elephant Mountain"
+    ]
+  },
+  {
+    "city": "Tashkent",
+    "country": "Uzbekistan",
+    "lat": 41.2995,
+    "lon": 69.2401,
+    "places": [
+      "Chorsu Bazaar",
+      "Hazrati Imam Complex",
+      "Amir Timur Square",
+      "Tashkent Metro"
+    ]
+  },
+  {
+    "city": "Tunis",
+    "country": "Tunisia",
+    "lat": 36.8065,
+    "lon": 10.1815,
+    "places": [
+      "Medina of Tunis",
+      "Carthage Ruins",
+      "Sidi Bou Said Promenade",
+      "Bardo Museum"
+    ]
+  },
+  {
+    "city": "Toulouse",
+    "country": "France",
+    "lat": 43.6047,
+    "lon": 1.4442,
+    "places": [
+      "Place du Capitole",
+      "Basilica of Saint-Sernin",
+      "Cité de l'Espace",
+      "Canal du Midi"
+    ]
+  },
+  {
+    "city": "Toledo",
+    "country": "Spain",
+    "lat": 39.8628,
+    "lon": -4.0273,
+    "places": [
+      "Toledo Cathedral",
+      "Alcázar of Toledo",
+      "San Juan de los Reyes",
+      "Mirador del Valle"
+    ]
+  },
+  {
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "lat": 41.7151,
+    "lon": 44.8271,
+    "places": [
+      "Narikala Fortress",
+      "Old Town Sulfur Baths",
+      "Holy Trinity Cathedral",
+      "Bridge of Peace"
+    ]
+  },
+  {
+    "city": "Tehran",
+    "country": "Iran",
+    "lat": 35.6892,
+    "lon": 51.389,
+    "places": [
+      "Golestan Palace",
+      "Milad Tower",
+      "Grand Bazaar of Tehran",
+      "Azadi Tower"
+    ]
+  },
+  {
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.0853,
+    "lon": 34.7818,
+    "places": [
+      "Old Jaffa Port",
+      "Tel Aviv Promenade",
+      "Carmel Market",
+      "Rothschild Boulevard"
+    ]
+  },
+  {
+    "city": "Turin",
+    "country": "Italy",
+    "lat": 45.0703,
+    "lon": 7.6869,
+    "places": [
+      "Mole Antonelliana",
+      "Egyptian Museum",
+      "Piazza Castello",
+      "Royal Palace of Turin"
+    ]
+  },
+  {
+    "city": "Tampa",
+    "country": "USA",
+    "lat": 27.9506,
+    "lon": -82.4572,
+    "places": [
+      "Busch Gardens",
+      "Ybor City Historic District",
+      "Tampa Riverwalk",
+      "Florida Aquarium"
+    ]
+  },
+  {
+    "city": "Trieste",
+    "country": "Italy",
+    "lat": 45.6495,
+    "lon": 13.7768,
+    "places": [
+      "Piazza Unità d'Italia",
+      "Miramare Castle",
+      "Canal Grande",
+      "Saint Justus Cathedral"
+    ]
+  },
+  {
+    "city": "Tromsø",
+    "country": "Norway",
+    "lat": 69.6492,
+    "lon": 18.9553,
+    "places": [
+      "Arctic Cathedral",
+      "Fjellheisen Cable Car",
+      "Northern Lights Observatory",
+      "Polaria Museum"
+    ]
+  },
+  {
+    "city": "Tangier",
+    "country": "Morocco",
+    "lat": 35.7595,
+    "lon": -5.834,
+    "places": [
+      "Kasbah of Tangier",
+      "Caves of Hercules",
+      "Grand Socco Market",
+      "Cape Spartel Lighthouse"
+    ]
+  },
+  {
+    "city": "Trabzon",
+    "country": "Turkey",
+    "lat": 41.0027,
+    "lon": 39.7168,
+    "places": [
+      "Sumela Monastery",
+      "Hagia Sophia Trabzon",
+      "Uzungöl Alpine Lake",
+      "Atatürk Pavilion"
+    ]
+  },
+  {
+    "city": "Taxila",
+    "country": "Pakistan",
+    "lat": 33.7463,
+    "lon": 72.8397,
+    "places": [
+      "Dharmarajika Stupa",
+      "Jaulian Monastery",
+      "Taxila Museum",
+      "Sirkap Ancient City"
+    ]
+  },
+  {
+    "city": "Tando Adam",
+    "country": "Pakistan",
+    "lat": 25.7682,
+    "lon": 68.6622,
+    "places": [
+      "Tando Adam Central Bazaar",
+      "Heritage Clocktower",
+      "Sindh Artisan Crafts"
+    ]
+  },
+  {
+    "city": "Tando Allahyar",
+    "country": "Pakistan",
+    "lat": 25.4605,
+    "lon": 68.7176,
+    "places": [
+      "Rama Pir Temple",
+      "Mango Orchard Groves",
+      "Historical Sindh Fort"
+    ]
+  },
+  {
+    "city": "Thatta",
+    "country": "Pakistan",
+    "lat": 24.7474,
+    "lon": 67.9239,
+    "places": [
+      "Makli Necropolis UNESCO",
+      "Shah Jahan Mosque",
+      "Keenjhar Lake",
+      "Kalyan Kot Fort"
+    ]
+  },
+  {
+    "city": "Turbat",
+    "country": "Pakistan",
+    "lat": 26.0031,
+    "lon": 63.0544,
+    "places": [
+      "Punnu Fort (Miri Kalat)",
+      "Kech River Date Orchards",
+      "Kohi-i-Murad Holy Shrine"
+    ]
+  },
+  {
+    "city": "Lahore",
+    "country": "Pakistan",
+    "lat": 31.5497,
+    "lon": 74.3436,
+    "places": [
+      "Badshahi Mosque",
+      "Lahore Fort & Sheesh Mahal",
+      "Shalimar Gardens",
+      "Anarkali Food Street",
+      "Wazir Khan Mosque"
+    ]
+  },
+  {
+    "city": "London",
+    "country": "UK",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "places": [
+      "Big Ben & Parliament",
+      "Tower Bridge",
+      "British Museum",
+      "Buckingham Palace",
+      "Borough Market"
+    ]
+  },
+  {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "places": [
+      "Belém Tower",
+      "Jerónimos Monastery",
+      "Alfama District",
+      "Tram 28 Route",
+      "Castelo de S. Jorge"
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "country": "USA",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "places": [
+      "Santa Monica Pier",
+      "Griffith Observatory & Hollywood Sign",
+      "Getty Center",
+      "Venice Beach"
+    ]
+  },
+  {
+    "city": "Larkana",
+    "country": "Pakistan",
+    "lat": 27.5598,
+    "lon": 68.212,
+    "places": [
+      "Mohenjo-daro UNESCO Ruins",
+      "Garhi Khuda Bakhsh",
+      "Shahnawaz Bhutto Library"
+    ]
+  },
+  {
+    "city": "Layyah",
+    "country": "Pakistan",
+    "lat": 30.9613,
+    "lon": 70.939,
+    "places": [
+      "Indus River Valley",
+      "Chashma-Layyah Canals",
+      "Heritage Date Farms"
+    ]
+  },
+  {
+    "city": "Lucerne",
+    "country": "Switzerland",
+    "lat": 47.0502,
+    "lon": 8.3093,
+    "places": [
+      "Chapel Bridge & Water Tower",
+      "Lake Lucerne Cruise",
+      "Lion Monument",
+      "Mount Pilatus"
+    ]
+  },
+  {
+    "city": "Lyon",
+    "country": "France",
+    "lat": 45.764,
+    "lon": 4.8357,
+    "places": [
+      "Basilica of Notre-Dame de Fourvière",
+      "Vieux Lyon Traboules",
+      "Place Bellecour",
+      "Parc de la Tête d'Or"
+    ]
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "places": [
+      "Burj Khalifa & Fountains",
+      "Dubai Mall",
+      "Palm Jumeirah",
+      "Desert Safari Dunes",
+      "Dubai Marina"
+    ]
+  },
+  {
+    "city": "Doha",
+    "country": "Qatar",
+    "lat": 25.2854,
+    "lon": 51.531,
+    "places": [
+      "Souq Waqif Heritage Bazaar",
+      "Museum of Islamic Art",
+      "The Pearl-Qatar",
+      "Katara Cultural Village"
+    ]
+  },
+  {
+    "city": "Dublin",
+    "country": "Ireland",
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "places": [
+      "Trinity College & Book of Kells",
+      "Guinness Storehouse",
+      "Temple Bar Quarter",
+      "St Patrick's Cathedral"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "country": "India",
+    "lat": 28.7041,
+    "lon": 77.1025,
+    "places": [
+      "Red Fort",
+      "Qutub Minar",
+      "Humayun's Tomb",
+      "India Gate",
+      "Chandni Chowk"
+    ]
+  },
+  {
+    "city": "Dera Ghazi Khan",
+    "country": "Pakistan",
+    "lat": 30.0561,
+    "lon": 70.6403,
+    "places": [
+      "Fort Munro Hill Station",
+      "Tomb of Ghazi Khan",
+      "Sakhi Sarwar Shrine"
+    ]
+  },
+  {
+    "city": "Dera Ismail Khan",
+    "country": "Pakistan",
+    "lat": 31.8314,
+    "lon": 70.9018,
+    "places": [
+      "Indus River Promenade",
+      "Bilot Ancient Fort",
+      "Chashma Right Bank"
+    ]
+  },
+  {
+    "city": "Daska",
+    "country": "Pakistan",
+    "lat": 32.3242,
+    "lon": 74.3503,
+    "places": [
+      "Daska Artisan Cutlery Market",
+      "Marala-Ravi Canal",
+      "Historical Clocktower"
+    ]
+  },
+  {
+    "city": "Dadu",
+    "country": "Pakistan",
+    "lat": 26.7329,
+    "lon": 67.7763,
+    "places": [
+      "Gorakh Hill Station",
+      "Manchar Lake",
+      "Khudabad Mosque Ruins"
+    ]
+  },
+  {
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "lat": 42.6507,
+    "lon": 18.0944,
+    "places": [
+      "Old Town City Walls",
+      "Stradun Promenade",
+      "Fort Lovrijenac",
+      "Lokrum Island"
+    ]
+  },
+  {
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "lat": 51.2277,
+    "lon": 6.7735,
+    "places": [
+      "Altstadt Old Town",
+      "Rheinturm Tower",
+      "Königsallee",
+      "MedienHafen"
+    ]
+  },
+  {
+    "city": "Faisalabad",
+    "country": "Pakistan",
+    "lat": 31.4504,
+    "lon": 73.135,
+    "places": [
+      "Eight Bazaars Clock Tower",
+      "Iqbal Stadium",
+      "Jinnah Gardens",
+      "D Ground Food Street",
+      "Gumti Water Fountain"
+    ]
+  },
+  {
+    "city": "Florence",
+    "country": "Italy",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "places": [
+      "Florence Cathedral (Duomo)",
+      "Uffizi Gallery",
+      "Ponte Vecchio",
+      "Piazzale Michelangelo"
+    ]
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1109,
+    "lon": 8.6821,
+    "places": [
+      "Römerberg Square",
+      "Main Tower Skydeck",
+      "Städel Museum",
+      "Palmengarten Botanical"
+    ]
+  },
+  {
+    "city": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5904,
+    "lon": 130.4017,
+    "places": [
+      "Fukuoka Castle Ruins",
+      "Ohori Park",
+      "Kushida Shrine",
+      "Yatai Street Food"
+    ]
+  },
+  {
+    "city": "Faro",
+    "country": "Portugal",
+    "lat": 37.0194,
+    "lon": -7.9304,
+    "places": [
+      "Faro Old Town Walls",
+      "Ria Formosa Lagoon",
+      "Praia de Faro",
+      "Capela dos Ossos"
+    ]
+  },
+  {
+    "city": "Sialkot",
+    "country": "Pakistan",
+    "lat": 32.4945,
+    "lon": 74.5229,
+    "places": [
+      "Iqbal Manzil (Allama Iqbal's Home)",
+      "Sialkot Fort",
+      "Clock Tower Saddar",
+      "Artisan Sports City",
+      "Marala Headworks"
+    ]
+  },
+  {
+    "city": "Swat",
+    "country": "Pakistan",
+    "lat": 34.7717,
+    "lon": 72.3602,
+    "places": [
+      "Malam Jabba Ski Resort",
+      "Fizagat Park",
+      "Swat Museum",
+      "Kalam Valley",
+      "Mahodand Lake"
+    ]
+  },
+  {
+    "city": "Skardu",
+    "country": "Pakistan",
+    "lat": 35.2971,
+    "lon": 75.6333,
+    "places": [
+      "Shangrila Resort & Lower Kachura",
+      "Deosai National Park",
+      "Katpana Cold Desert",
+      "Upper Kachura Lake",
+      "Kharpocho Fort"
+    ]
+  },
+  {
+    "city": "Sargodha",
+    "country": "Pakistan",
+    "lat": 32.0836,
+    "lon": 72.6711,
+    "places": [
+      "Kirana Hills",
+      "Citrus & Kinnow Orchards",
+      "PAF Aeronautical Base Heritage",
+      "Company Bagh"
+    ]
+  },
+  {
+    "city": "Sukkur",
+    "country": "Pakistan",
+    "lat": 27.7052,
+    "lon": 68.8574,
+    "places": [
+      "Sukkur Barrage & Indus River",
+      "Lansdowne Bridge",
+      "Sadh Belo Island Temple",
+      "Lab-e-Mehran Promenade"
+    ]
+  },
+  {
+    "city": "Sheikhupura",
+    "country": "Pakistan",
+    "lat": 31.7131,
+    "lon": 73.9783,
+    "places": [
+      "Hiran Minar & Water Tank",
+      "Sheikhupura Historical Fort",
+      "Company Gardens"
+    ]
+  },
+  {
+    "city": "Sahiwal",
+    "country": "Pakistan",
+    "lat": 30.6682,
+    "lon": 73.1114,
+    "places": [
+      "Harappa Indus Valley Ruins",
+      "Farid Town Park",
+      "Montgomery Clock Tower"
+    ]
+  },
+  {
+    "city": "Sadiqabad",
+    "country": "Pakistan",
+    "lat": 28.3089,
+    "lon": 70.1306,
+    "places": [
+      "Bagh-e-Bahisht",
+      "Mirza Talib Monument",
+      "Cholistan Gateway"
+    ]
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "places": [
+      "Sydney Opera House",
+      "Sydney Harbour Bridge",
+      "Bondi Coastal Walk",
+      "Taronga Zoo",
+      "Darling Harbour"
+    ]
+  },
+  {
+    "city": "Singapore",
+    "country": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "places": [
+      "Gardens by the Bay",
+      "Marina Bay Sands SkyPark",
+      "Changi Jewel",
+      "Sentosa Island",
+      "Maxwell Food Centre"
+    ]
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "places": [
+      "Gyeongbokgung Palace",
+      "N Seoul Tower",
+      "Bukchon Hanok Village",
+      "Myeongdong Shopping",
+      "Hongdae District"
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "country": "USA",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "places": [
+      "Golden Gate Bridge",
+      "Alcatraz Island",
+      "Fisherman's Wharf & Pier 39",
+      "Cable Car Transit",
+      "Chinatown"
+    ]
+  },
+  {
+    "city": "Seattle",
+    "country": "USA",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "places": [
+      "Space Needle",
+      "Pike Place Market",
+      "Chihuly Garden and Glass",
+      "Seattle Waterfront Ferry"
+    ]
+  },
+  {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "places": [
+      "Gamla Stan Old Town",
+      "Vasa Maritime Museum",
+      "Royal Palace of Stockholm",
+      "Skansen Open-Air Museum"
+    ]
+  },
+  {
+    "city": "Salzburg",
+    "country": "Austria",
+    "lat": 47.8095,
+    "lon": 13.055,
+    "places": [
+      "Hohensalzburg Fortress",
+      "Mozart's Birthplace",
+      "Mirabell Palace & Gardens",
+      "Salzburg Old Town"
+    ]
+  },
+  {
+    "city": "Seville",
+    "country": "Spain",
+    "lat": 37.3891,
+    "lon": -5.9845,
+    "places": [
+      "Plaza de España",
+      "Royal Alcázar of Seville",
+      "Seville Cathedral & Giralda",
+      "Triana Flamenco Quarter"
+    ]
+  },
+  {
+    "city": "Split",
+    "country": "Croatia",
+    "lat": 43.5081,
+    "lon": 16.4402,
+    "places": [
+      "Diocletian's Palace",
+      "Riva Waterfront Promenade",
+      "Marjan Hill Park",
+      "Klis Fortress"
+    ]
+  },
+  {
+    "city": "Santorini",
+    "country": "Greece",
+    "lat": 36.3932,
+    "lon": 25.4615,
+    "places": [
+      "Oia Sunset Viewpoint",
+      "Fira Cliffside Walk",
+      "Red Beach",
+      "Akrotiri Ruins",
+      "Amoudi Bay Seafood"
+    ]
+  },
+  {
+    "city": "Samarkand",
+    "country": "Uzbekistan",
+    "lat": 39.627,
+    "lon": 66.9749,
+    "places": [
+      "Registan Square",
+      "Bibi-Khanym Mosque",
+      "Shah-i-Zinda Necropolis",
+      "Gur-e-Amir Mausoleum"
+    ]
+  },
+  {
+    "city": "Karachi",
+    "country": "Pakistan",
+    "lat": 24.8607,
+    "lon": 67.0011,
+    "places": [
+      "Clifton Beach & Sea View",
+      "Mazar-e-Quaid Mausoleum",
+      "Mohatta Palace",
+      "Port Grand Promenade",
+      "Burns Road Food Street"
+    ]
+  },
+  {
+    "city": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "places": [
+      "Fushimi Inari Torii Gates",
+      "Kinkaku-ji Golden Pavilion",
+      "Arashiyama Bamboo Forest",
+      "Gion Geisha Quarter",
+      "Kiyomizu-dera"
+    ]
+  },
+  {
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.139,
+    "lon": 101.6869,
+    "places": [
+      "Petronas Twin Towers",
+      "Batu Caves",
+      "Merdeka Square",
+      "Bukit Bintang Food Street",
+      "KL Tower"
+    ]
+  },
+  {
+    "city": "Kuwait City",
+    "country": "Kuwait",
+    "lat": 29.3759,
+    "lon": 47.9774,
+    "places": [
+      "Kuwait Towers",
+      "Souq Al-Mubarakiya",
+      "Grand Mosque of Kuwait",
+      "The Avenues Mall"
+    ]
+  },
+  {
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "lat": 27.7172,
+    "lon": 85.324,
+    "places": [
+      "Boudhanath Stupa",
+      "Pashupatinath Temple",
+      "Kathmandu Durbar Square",
+      "Swayambhunath Monkey Temple"
+    ]
+  },
+  {
+    "city": "Krakow",
+    "country": "Poland",
+    "lat": 50.0647,
+    "lon": 19.945,
+    "places": [
+      "Main Market Square",
+      "Wawel Royal Castle",
+      "Kazimierz Jewish Quarter",
+      "St. Mary's Basilica"
+    ]
+  },
+  {
+    "city": "Kasur",
+    "country": "Pakistan",
+    "lat": 31.1179,
+    "lon": 74.446,
+    "places": [
+      "Shrine of Bulleh Shah",
+      "Kasuri Falooda & Andrasay",
+      "Ganda Singh Border Flag Ceremony"
+    ]
+  },
+  {
+    "city": "Kohat",
+    "country": "Pakistan",
+    "lat": 33.5869,
+    "lon": 71.4414,
+    "places": [
+      "Kohat Pass & Tunnel",
+      "Tanda Dam & Lake",
+      "Cavagnari's Post Heritage Fort"
+    ]
+  },
+  {
+    "city": "Kalam",
+    "country": "Pakistan",
+    "lat": 35.4907,
+    "lon": 72.5847,
+    "places": [
+      "Ushu Pine Forest",
+      "Mahodand Alpine Lake",
+      "Kundol Lake Trek",
+      "Matiltan Waterfall"
+    ]
+  },
+  {
+    "city": "Kumrat Valley",
+    "country": "Pakistan",
+    "lat": 35.5348,
+    "lon": 72.2215,
+    "places": [
+      "Jahan Abad Waterfall",
+      "Kumrat National Forest",
+      "Panjkora River Banks",
+      "Katora Lake Trek"
+    ]
+  },
+  {
+    "city": "Hunza",
+    "country": "Pakistan",
+    "lat": 36.3167,
+    "lon": 74.65,
+    "places": [
+      "Baltit Fort",
+      "Altit Fort",
+      "Attabad Lake Turquoise Boating",
+      "Passu Cones Cathedral",
+      "Eagle's Nest Sunset"
+    ]
+  },
+  {
+    "city": "Multan",
+    "country": "Pakistan",
+    "lat": 30.1575,
+    "lon": 71.5249,
+    "places": [
+      "Shrine of Shah Rukn-e-Alam",
+      "Bahauddin Zakariya Shrine",
+      "Fort Kohna Qasim",
+      "Hussain Agahi Blue Pottery",
+      "Sohan Halwa"
+    ]
+  },
+  {
+    "city": "Murree",
+    "country": "Pakistan",
+    "lat": 33.907,
+    "lon": 73.3943,
+    "places": [
+      "Mall Road Promenade",
+      "Patriata Chairlift",
+      "Pindi Point Lookout",
+      "Kashmir Point",
+      "Bhurban Golf Resort"
+    ]
+  },
+  {
+    "city": "Mardan",
+    "country": "Pakistan",
+    "lat": 34.1989,
+    "lon": 72.0404,
+    "places": [
+      "Takht-i-Bahi UNESCO Monastery",
+      "Mardan Cantt Heritage",
+      "Bacha Khan Monument"
+    ]
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "places": [
+      "Prado Museum",
+      "Royal Palace of Madrid",
+      "El Retiro Park",
+      "Plaza Mayor",
+      "Puerta del Sol"
+    ]
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "places": [
+      "Marienplatz & Glockenspiel",
+      "Nymphenburg Palace",
+      "English Garden",
+      "BMW Welt & Museum"
+    ]
+  },
+  {
+    "city": "Milan",
+    "country": "Italy",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "places": [
+      "Duomo di Milano",
+      "Galleria Vittorio Emanuele II",
+      "Santa Maria delle Grazie",
+      "Sforza Castle"
+    ]
+  },
+  {
+    "city": "Montreal",
+    "country": "Canada",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "places": [
+      "Old Montreal",
+      "Notre-Dame Basilica",
+      "Mount Royal Lookout",
+      "Jean-Talon Market"
+    ]
+  },
+  {
+    "city": "Melbourne",
+    "country": "Australia",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "places": [
+      "Federation Square",
+      "Flinders Street Station",
+      "Royal Botanic Gardens",
+      "St Kilda Beach Pier"
+    ]
+  },
+  {
+    "city": "Marrakesh",
+    "country": "Morocco",
+    "lat": 31.6295,
+    "lon": -7.9811,
+    "places": [
+      "Jemaa el-Fnaa Square",
+      "Majorelle Garden & YSL",
+      "Bahia Palace",
+      "Koutoubia Mosque",
+      "Souks"
+    ]
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4326,
+    "lon": -99.1332,
+    "places": [
+      "Zócalo & Cathedral",
+      "Frida Kahlo Museum",
+      "Chapultepec Castle",
+      "Teotihuacan Pyramids"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "places": [
+      "Gateway of India",
+      "Marine Drive Promenade",
+      "Chhatrapati Shivaji Terminus",
+      "Elephanta Caves"
+    ]
+  },
+  {
+    "city": "Muscat",
+    "country": "Oman",
+    "lat": 23.588,
+    "lon": 58.3829,
+    "places": [
+      "Sultan Qaboos Grand Mosque",
+      "Muttrah Souq & Corniche",
+      "Royal Opera House",
+      "Al Jalali Fort"
+    ]
+  },
+  {
+    "city": "Medina",
+    "country": "Saudi Arabia",
+    "lat": 24.5247,
+    "lon": 39.5692,
+    "places": [
+      "Al-Masjid an-Nabawi",
+      "Mount Uhud",
+      "Quba Mosque",
+      "Seven Mosques Site"
+    ]
+  },
+  {
+    "city": "Mecca",
+    "country": "Saudi Arabia",
+    "lat": 21.3891,
+    "lon": 39.8579,
+    "places": [
+      "Masjid al-Haram & Kaaba",
+      "Abraj Al-Bait Clock Tower",
+      "Jabal al-Nour & Hira Cave",
+      "Mina Valley"
+    ]
+  },
+  {
+    "city": "Naran",
+    "country": "Pakistan",
+    "lat": 34.9084,
+    "lon": 73.6542,
+    "places": [
+      "Saif-ul-Malook Alpine Lake",
+      "Babusar Pass 13,691ft",
+      "Lulusar Lake",
+      "Ansoo Lake Trek",
+      "Kunhar River Rafting"
+    ]
+  },
+  {
+    "city": "Nathia Gali",
+    "country": "Pakistan",
+    "lat": 34.0722,
+    "lon": 73.3853,
+    "places": [
+      "Miranjani Peak Trek",
+      "Mukshpuri Pine Ridge",
+      "Governor House Woods",
+      "Pipeline Walking Track"
+    ]
+  },
+  {
+    "city": "Neelum Valley",
+    "country": "Pakistan",
+    "lat": 34.5888,
+    "lon": 73.9056,
+    "places": [
+      "Ratti Gali Alpine Lake",
+      "Kutton Waterfall",
+      "Sharda Peeth Ancient University",
+      "Arang Kel Green Village"
+    ]
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "places": [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame Cathedral",
+      "Montmartre & Sacré-Cœur",
+      "Seine River Cruise"
+    ]
+  },
+  {
+    "city": "Peshawar",
+    "country": "Pakistan",
+    "lat": 34.0151,
+    "lon": 71.5249,
+    "places": [
+      "Qissa Khwani Bazaar",
+      "Bala Hissar Fort",
+      "Mahabat Khan Mosque",
+      "Peshawar Museum",
+      "Namak Mandi Food Street"
+    ]
+  },
+  {
+    "city": "Quetta",
+    "country": "Pakistan",
+    "lat": 30.1798,
+    "lon": 66.975,
+    "places": [
+      "Hanna Lake & Urak Valley",
+      "Hazarganji Chiltan National Park",
+      "Liaquat Bazaar Dry Fruits",
+      "Quetta Geological Museum"
+    ]
+  },
+  {
+    "city": "Rome",
+    "country": "Italy",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "places": [
+      "Colosseum & Roman Forum",
+      "Vatican Museums",
+      "Trevi Fountain",
+      "Pantheon",
+      "Piazza Navona"
+    ]
+  },
+  {
+    "city": "Rawalpindi",
+    "country": "Pakistan",
+    "lat": 33.5651,
+    "lon": 73.0169,
+    "places": [
+      "Raja Bazaar Historic Alleys",
+      "Ayub National Park",
+      "Rawalpindi Golf Course",
+      "Liaquat Bagh"
+    ]
+  },
+  {
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "places": [
+      "Hallgrímskirkja Church",
+      "Blue Lagoon Geothermal Spa",
+      "Harpa Concert Hall",
+      "Golden Circle Tour Gateway"
+    ]
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "lat": 24.7136,
+    "lon": 46.6753,
+    "places": [
+      "Kingdom Centre Sky Bridge",
+      "Diriyah Citadel",
+      "National Museum",
+      "Al Masmak Fortress",
+      "Boulevard World"
+    ]
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "places": [
+      "Schönbrunn Palace",
+      "St. Stephen's Cathedral",
+      "Hofburg Imperial Palace",
+      "Belvedere Museum",
+      "Vienna State Opera"
+    ]
+  },
+  {
+    "city": "Venice",
+    "country": "Italy",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "places": [
+      "St. Mark's Basilica & Square",
+      "Grand Canal Gondola Tour",
+      "Rialto Bridge",
+      "Doge's Palace",
+      "Murano Glass Island"
+    ]
+  },
+  {
+    "city": "Vancouver",
+    "country": "Canada",
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "places": [
+      "Stanley Park Seawall",
+      "Capilano Suspension Bridge",
+      "Granville Island Public Market",
+      "Gastown Steam Clock"
+    ]
+  },
+  {
+    "city": "Ziarat",
+    "country": "Pakistan",
+    "lat": 30.3824,
+    "lon": 67.7256,
+    "places": [
+      "Quaid-e-Azam Residency Heritage",
+      "Ancient Juniper Forest Biosphere",
+      "Prospect Point Lookout",
+      "Ziarat Valley Orchards"
+    ]
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "places": [
+      "Lake Zurich Promenade",
+      "Old Town (Altstadt)",
+      "Bahnhofstrasse Shopping",
+      "Uetliberg Mountain Viewpoint"
+    ]
+  },
+  {
+    "city": "Zermatt",
+    "country": "Switzerland",
+    "lat": 45.9765,
+    "lon": 7.7491,
+    "places": [
+      "Matterhorn Glacier Paradise",
+      "Gornergrat Railway Viewpoint",
+      "Zermatt Alpine Village",
+      "Sunnegga Paradise Trek"
+    ]
+  }
+]
