@@ -97,30 +97,7 @@ def convert_currency(
         formatted=f"{sym} {converted:,.2f} {to_c}"
     )
 
-@router.post("/translate", response_model=TranslationResponse)
-def quick_translate(req: TranslationRequest):
-    """Travel phrases translator helper."""
-    phrase_book = {
-        "hello": {"es": "Hola", "fr": "Bonjour", "ja": "Konnichiwa", "de": "Hallo", "it": "Ciao", "ur": "Assalam-o-Alaikum", "ar": "Marhaban", "tr": "Merhaba"},
-        "thank you": {"es": "Gracias", "fr": "Merci", "ja": "Arigatou", "de": "Danke", "it": "Grazie", "ur": "Shukriya", "ar": "Shukran", "tr": "Teşekkür ederim"},
-        "where is the train station?": {"es": "¿Dónde está la estación de tren?", "fr": "Où est la gare?", "ja": "Eki wa doko desu ka?", "de": "Wo ist der Bahnhof?", "it": "Dov'è la stazione ferroviaria?", "ur": "Railway station kahan hai?", "ar": "Ayna mahattat al-qitar?", "tr": "Tren istasyonu nerede?"},
-        "how much is this?": {"es": "¿Cuánto cuesta esto?", "fr": "Combien ça coûte?", "ja": "Ikura desu ka?", "de": "Wie viel kostet das?", "it": "Quanto costa questo?", "ur": "Yeh kitnay ka hai?", "ar": "Bikam hadha?", "tr": "Bu ne kadar?"},
-        "bill please": {"es": "La cuenta, por favor", "fr": "L'addition, s'il vous plaît", "ja": "Okaikei o onegaishimasu", "de": "Die Rechnung, bitte", "it": "Il conto, per favore", "ur": "Bill de dain please", "ar": "Al-hisab min fadlak", "tr": "Hesap lütfen"}
-    }
-    
-    q_clean = req.text.strip().lower()
-    target = req.target_language.lower()
-    
-    if q_clean in phrase_book and target in phrase_book[q_clean]:
-        translated = phrase_book[q_clean][target]
-    else:
-        translated = f"[{target.upper()}] {req.text}"
 
-    return TranslationResponse(
-        original_text=req.text,
-        translated_text=translated,
-        target_language=req.target_language
-    )
 
 @router.get("/ai-spots")
 async def get_ai_spots(
