@@ -172,6 +172,7 @@ class TripSummaryResponse(BaseModel):
     interests: List[str]
     pace: str
     status: str
+    cover_photo: Optional[str] = None
     created_at: datetime
     updated_at: datetime
     model_config = ConfigDict(from_attributes=True)

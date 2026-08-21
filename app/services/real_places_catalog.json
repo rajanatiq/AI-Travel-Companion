@@ -1,2000 +1,1607 @@
 {
-  "faisalabad": {
-    "history": [
-      {
-        "name": "Faisalabad Clock Tower (Ghanta Ghar)",
-        "address": "Central Square, Eight Bazaars, Faisalabad",
-        "lat": 31.4187,
-        "lon": 73.0791,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.9,
-        "desc": "Iconic British Raj heritage clocktower built in 1903 standing at the hub of eight historic bazaars.",
-        "photo_url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=700&q=80"
-      },
-      {
-        "name": "Gumti Water Fountain",
-        "address": "Rail Bazaar Roundabout, Faisalabad",
-        "lat": 31.4168,
-        "lon": 73.0815,
-        "cost": 0.0,
-        "duration": 45,
-        "rating": 4.6,
-        "desc": "Historic British architectural monument built in 1907 preserved in the central city.",
-        "photo_url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=700&q=80"
-      },
-      {
-        "name": "Lyallpur Museum",
-        "address": "Majumdar Road, Faisalabad",
-        "lat": 31.4255,
-        "lon": 73.0842,
-        "cost": 2.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Regional heritage museum featuring 10 ancient galleries documenting ancient Indus Valley and Lyallpur history.",
-        "photo_url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=80"
-      },
-      {
-        "name": "Qaisery Gate (Old City Gate)",
-        "address": "Circular Road, Faisalabad",
-        "lat": 31.415,
-        "lon": 73.077,
-        "cost": 0.0,
-        "duration": 45,
-        "rating": 4.5,
-        "desc": "Historic 1897 ornate gateway to the old town market and clocktower district.",
-        "photo_url": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "D-Ground Food Street & Barbecue Corner",
-        "address": "D-Ground, People's Colony No. 1, Faisalabad",
-        "lat": 31.4112,
-        "lon": 73.1098,
-        "cost": 12.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Faisalabad's most vibrant culinary street packed with Seekh Kababs, Malai Boti, Karahi, and Fresh Jalebi.",
-        "photo_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80"
-      },
-      {
-        "name": "Rex City Samosa & Chaat Hub",
-        "address": "Satyana Road, Faisalabad",
-        "lat": 31.408,
-        "lon": 73.104,
-        "cost": 4.0,
-        "duration": 45,
-        "rating": 4.8,
-        "desc": "Famous Faisalabadi Chana Chaat, Papri Chaat, and crispy spiced Samosas.",
-        "photo_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80"
-      },
-      {
-        "name": "Harianwala Chowk Kulfi & Rabri Falooda",
-        "address": "Peoples Colony 1, Faisalabad",
-        "lat": 31.4135,
-        "lon": 73.112,
-        "cost": 3.5,
-        "duration": 45,
-        "rating": 4.9,
-        "desc": "Renowned traditional ice-churned Rabri Falooda and Khoya Kulfi.",
-        "photo_url": "https://images.unsplash.com/photo-1501159599894-155982264a55?w=700&q=80"
-      },
-      {
-        "name": "Saleemi Chowk Daal Chawal & Barbecue",
-        "address": "Satyana Road, Faisalabad",
-        "lat": 31.3995,
-        "lon": 73.098,
-        "cost": 6.0,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Authentic fragrant spicy Daal Chawal, Shami Kabab, and Tawa Chicken.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Jinnah Gardens (Company Bagh)",
-        "address": "Mall Road, Faisalabad",
-        "lat": 31.4285,
-        "lon": 73.089,
-        "cost": 1.0,
-        "duration": 90,
-        "rating": 4.6,
-        "desc": "Sprawling historical botanical park featuring ancient banyan trees, fountain walks, and shaded floral lawns.",
-        "photo_url": "https://images.unsplash.com/photo-1463680942456-e4230dbeaec6?w=700&q=80"
-      },
-      {
-        "name": "Gatwala Wildlife Park & Forest Reserve",
-        "address": "Sheikhupura Road, Gatwala, Faisalabad",
-        "lat": 31.472,
-        "lon": 73.195,
-        "cost": 2.0,
-        "duration": 120,
-        "rating": 4.7,
-        "desc": "Expansive green biosphere with peaceful lake boating, deer enclosures, and pine walking tracks.",
-        "photo_url": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=80"
-      },
-      {
-        "name": "Canal Road Green Promenade",
-        "address": "Jhang Branch Canal Road, Faisalabad",
-        "lat": 31.44,
-        "lon": 73.125,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.5,
-        "desc": "Scenic tree-lined canal walkway popular for sunset jogs and fresh juice stalls.",
-        "photo_url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "Faisalabad Arts Council (Nusrat Fateh Ali Khan Auditorium)",
-        "address": "Club Road, Faisalabad",
-        "lat": 31.424,
-        "lon": 73.0875,
-        "cost": 3.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Cultural complex with live qawwali theater, calligraphy exhibits, and visual arts galleries.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      },
-      {
-        "name": "Chenab Club Heritage Pavilion",
-        "address": "Club Road, Civil Lines, Faisalabad",
-        "lat": 31.4225,
-        "lon": 73.086,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.6,
-        "desc": "Historic 1910 colonial club and architecture with archival photographs of Old Lyallpur.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Eight Bazaars Historic Walking Trail",
-        "address": "Clock Tower Center, Faisalabad",
-        "lat": 31.4187,
-        "lon": 73.0791,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Explore Katchery, Rail, Chiniot, Aminpur, Bhawana, Jhang, Montgomery, and Karkhana Bazaars.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      },
-      {
-        "name": "Katchery Bazaar Textile & Heritage Guilds",
-        "address": "Katchery Bazaar, Faisalabad",
-        "lat": 31.42,
-        "lon": 73.0795,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Centuries-old silk, Khaddar handlooms, and traditional brassware workshops.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Koh-e-Noor City Shopping Plaza & Boutiques",
-        "address": "Jaranwala Road, Faisalabad",
-        "lat": 31.405,
-        "lon": 73.109,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Premier fashion avenue with top designer clothing, perfumes, and footwear outlets.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      },
-      {
-        "name": "Rail Bazaar Traditional Spices & Souks",
-        "address": "Rail Bazaar, Faisalabad",
-        "lat": 31.4175,
-        "lon": 73.082,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Aromatic bazaar brimming with Himalayan pink salt, pure spices, and dry fruits.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Iqbal Stadium Sports Complex",
-        "address": "Civil Lines, Faisalabad",
-        "lat": 31.417,
-        "lon": 73.088,
-        "cost": 2.0,
-        "duration": 60,
-        "rating": 4.6,
-        "desc": "Historic international cricket stadium and surrounding outdoor athletics grounds.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      },
-      {
-        "name": "Sindbad Amusement Park",
-        "address": "Iqbal Stadium Road, Faisalabad",
-        "lat": 31.416,
-        "lon": 73.0895,
-        "cost": 5.0,
-        "duration": 90,
-        "rating": 4.5,
-        "desc": "Family thrills featuring bumper cars, roller coaster rides, and carnival games.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "D-Ground Night Food Square & Cafes",
-        "address": "D-Ground Commercial Area, Faisalabad",
-        "lat": 31.4112,
-        "lon": 73.1098,
-        "cost": 10.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Bustling open-air midnight hangout with artisanal coffee bars, chai spots, and barbecue lounges.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      },
-      {
-        "name": "Koh-e-Noor Night Arcade & Ice Cream Parlours",
-        "address": "Jaranwala Road, Faisalabad",
-        "lat": 31.405,
-        "lon": 73.109,
-        "cost": 6.0,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Illuminated nighttime boulevard with dessert lounges and late-night shopping.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ]
-  },
-  "lahore": {
-    "history": [
-      {
-        "name": "Badshahi Mosque",
-        "address": "Walled City, Lahore",
-        "lat": 31.5882,
-        "lon": 74.3095,
-        "cost": 1.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Grand 1673 Mughal architectural masterpiece built with red sandstone and white marble domes.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Badshahi_Mosque_front_view.jpg/800px-Badshahi_Mosque_front_view.jpg"
-      },
-      {
-        "name": "Lahore Fort (Shahi Qila) & Sheesh Mahal",
-        "address": "Fort Road, Walled City, Lahore",
-        "lat": 31.588,
-        "lon": 74.3152,
-        "cost": 3.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "UNESCO World Heritage fortress with the Palace of Mirrors (Sheesh Mahal), Naulakha Pavilion, and Elephant Steps.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Lahore_Fort_view.jpg/800px-Lahore_Fort_view.jpg"
-      },
-      {
-        "name": "Wazir Khan Mosque & Shahi Hammam",
-        "address": "Delhi Gate, Walled City, Lahore",
-        "lat": 31.583,
-        "lon": 74.3235,
-        "cost": 1.5,
-        "duration": 60,
-        "rating": 4.9,
-        "desc": "The jewel of Mughal fresco tile art, renowned for Persian mosaics and 17th-century royal Turkish baths.",
-        "photo_url": "https://images.unsplash.com/photo-1557683316-973673baf926?w=700&q=80"
-      },
-      {
-        "name": "Shalimar Gardens (Shalamar Bagh)",
-        "address": "GT Road, Shalimar Town, Lahore",
-        "lat": 31.5862,
-        "lon": 74.3824,
-        "cost": 2.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "UNESCO Mughal garden complex featuring 410 cascading fountains, marble pavilions, and terraced waterways.",
-        "photo_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=700&q=80"
-      },
-      {
-        "name": "Minar-e-Pakistan",
-        "lat": 31.5925,
-        "lon": 74.3095,
-        "desc": "National monument marking the site where the Lahore Resolution was passed.",
-        "address": "Greater Iqbal Park, Lahore",
-        "cost": 5,
-        "duration": 60
-      },
-      {
-        "name": "Data Darbar",
-        "lat": 31.5778,
-        "lon": 74.3044,
-        "desc": "One of the oldest Muslim shrines in South Asia.",
-        "address": "Data Ganj Bakhsh Road, Lahore",
-        "cost": 0,
-        "duration": 45
-      }
-    ],
-    "food": [
-      {
-        "name": "Haveli Restaurant (Fort Road Food Street)",
-        "address": "Fort Road, Walled City, Lahore",
-        "lat": 31.5875,
-        "lon": 74.3115,
-        "cost": 18.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Rooftop dining overlooking floodlit Badshahi Mosque serving Mutton Karahi, Chapli Kababs, and Roghani Naan.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Gawalmandi Historic Food Street",
-        "address": "Gawalmandi, Lahore",
-        "lat": 31.571,
-        "lon": 74.318,
-        "cost": 8.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Legendary birthplace of Lahori food: Taka Tak, Feeka Lassi, Fried Fish, and Hareesa.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Anarkali Food Street & Bano Falooda",
-        "address": "Old Anarkali, Lahore",
-        "lat": 31.564,
-        "lon": 74.314,
-        "cost": 6.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Famous Old Anarkali street food, Gol Gappay, Karahi Tikka, and world-renowned Bano Falooda.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Bagh-e-Jinnah (Lawrence Gardens)",
-        "address": "Mall Road, Civil Lines, Lahore",
-        "lat": 31.5535,
-        "lon": 74.3315,
-        "cost": 0.5,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Botanical garden oasis with Victorian greenhouses, open-air theater, and century-old oak trees.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      },
-      {
-        "name": "Jallo Park & Butterfly Botanical Sanctuary",
-        "address": "Jallo, GT Road, Lahore",
-        "lat": 31.578,
-        "lon": 74.475,
-        "cost": 2.0,
-        "duration": 120,
-        "rating": 4.7,
-        "desc": "Expansive safari park with a butterfly house, boating lake, and shady forest groves.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "Lahore Museum",
-        "address": "Mall Road, Anarkali, Lahore",
-        "lat": 31.5683,
-        "lon": 74.3082,
-        "cost": 3.0,
-        "duration": 105,
-        "rating": 4.8,
-        "desc": "Pakistan's oldest museum housing the world-famous Fasting Buddha of Gandhara and Mughal mini-paintings.",
-        "photo_url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=80"
-      },
-      {
-        "name": "Alhamra Arts Council & Gallery",
-        "address": "Mall Road, Lahore",
-        "lat": 31.557,
-        "lon": 74.328,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Award-winning red-brick contemporary arts complex showcasing modern Pakistani masters and classical music.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Delhi Gate & Royal Trail (Guzargah)",
-        "address": "Delhi Gate, Walled City, Lahore",
-        "lat": 31.5825,
-        "lon": 74.325,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Historic royal procession path through ancient spice bazaars, painted havelis, and Mughal gates.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      },
-      {
-        "name": "Anarkali Bazaar Heritage Walk",
-        "address": "Anarkali, Mall Road, Lahore",
-        "lat": 31.566,
-        "lon": 74.312,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "South Asia's oldest surviving market named after court courtesan Anarkali, packed with silk and jewelry.",
-        "photo_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Packages Mall",
-        "address": "Walton Road, Gulxberg, Lahore",
-        "lat": 31.472,
-        "lon": 74.358,
-        "cost": 0.0,
-        "duration": 120,
-        "rating": 4.8,
-        "desc": "Mega luxury lifestyle mall featuring 200+ global brands, multiplex cinema, and gourmet food court.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      },
-      {
-        "name": "Emporium Mall",
-        "address": "Johar Town, Lahore",
-        "lat": 31.468,
-        "lon": 74.275,
-        "cost": 0.0,
-        "duration": 120,
-        "rating": 4.8,
-        "desc": "One of South Asia's largest retail centers with an indoor theme park and global fashion flagships.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Wagah Border Flag Lowering Ceremony",
-        "address": "Wagah Border, Lahore",
-        "lat": 31.6048,
-        "lon": 74.5724,
-        "cost": 0.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "Thrilling military parade and sunset flag-lowering spectacle with thousands of cheering spectators.",
-        "photo_url": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=700&q=80"
-      },
-      {
-        "name": "Joyland & Fortress Stadium Rides",
-        "address": "Fortress Stadium, Cantt, Lahore",
-        "lat": 31.532,
-        "lon": 74.365,
-        "cost": 6.0,
-        "duration": 90,
-        "rating": 4.6,
-        "desc": "High-adrenaline amusement rides, discovery wheels, and carnival games in Cantt.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "MM Alam Road Night Cafes & Lounges",
-        "address": "MM Alam Road, Gulberg III, Lahore",
-        "lat": 31.516,
-        "lon": 74.352,
-        "cost": 15.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Chic midnight promenade filled with artisanal espresso bars, patisseries, and open-air lounges.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      },
-      {
-        "name": "DHA Raya Fairways Midnight Promenade",
-        "address": "Phase 6 DHA, Lahore",
-        "lat": 31.455,
-        "lon": 74.432,
-        "cost": 12.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Upscale illuminated European-style square with golf course vistas, live music, and dessert parlors.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ]
-  },
-  "tokyo": {
-    "history": [
-      {
-        "name": "Sens\u014d-ji Temple",
-        "address": "2-3-1 Asakusa, Taito City, Tokyo",
-        "lat": 35.7147,
-        "lon": 139.7967,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Tokyo's oldest Buddhist temple founded in 645 AD, famous for the giant Kaminarimon Red Lantern.",
-        "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
-      },
-      {
-        "name": "Meiji Jingu Shrine",
-        "address": "1-1 Yoyogikamizonocho, Shibuya City, Tokyo",
-        "lat": 35.6764,
-        "lon": 139.6993,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Serene Shinto shrine dedicated to Emperor Meiji nestled within an evergreen sacred forest of 100,000 trees.",
-        "photo_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80"
-      },
-      {
-        "name": "Imperial Palace East Gardens & Edo Castle Moat",
-        "address": "1-1 Chiyoda, Chiyoda City, Tokyo",
-        "lat": 35.6852,
-        "lon": 139.7528,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Historic Edo Castle stone ramparts, Ninomaru Japanese garden, and imperial palace pine bridges.",
-        "photo_url": "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Tsukiji Outer Seafood Market",
-        "address": "4 Chome Tsukiji, Chuo City, Tokyo",
-        "lat": 35.6655,
-        "lon": 139.7708,
-        "cost": 18.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "World-famous foodie labyrinth with fresh sashimi bowls, grilled wagyu skewers, tamagoyaki, and matcha.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Tokyo Ramen Street (Tokyo Station)",
-        "address": "1 Chome Marunouchi, Chiyoda City, Tokyo",
-        "lat": 35.6812,
-        "lon": 139.7671,
-        "cost": 9.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Eight of Japan's most celebrated ramen masters under one roof serving rich Tonkotsu and Tsukemen.",
-        "photo_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700&q=80"
-      },
-      {
-        "name": "Omoide Yokocho (Memory Lane Yakitori)",
-        "address": "1-2 Nishishinjuku, Shinjuku City, Tokyo",
-        "lat": 35.6929,
-        "lon": 139.6997,
-        "cost": 15.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Atmospheric post-war alleyways lined with smoking charcoal yakitori grills and sake taverns.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Shinjuku Gyoen National Garden",
-        "address": "11 Naitomachi, Shinjuku City, Tokyo",
-        "lat": 35.6852,
-        "lon": 139.71,
-        "cost": 3.5,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Sprawling 144-acre oasis blending traditional Japanese landscape, English landscape, and French formal gardens.",
-        "photo_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80"
-      },
-      {
-        "name": "Ueno Onshi Park & Shinobazu Pond",
-        "address": "Uenokoen, Taito City, Tokyo",
-        "lat": 35.714,
-        "lon": 139.7741,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Centuries-old public park surrounded by lotus ponds, cherry blossom promenades, and shrines.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "teamLab Planets TOKYO (Immersive Digital Art)",
-        "address": "6-1-16 Toyosu, Koto City, Tokyo",
-        "lat": 35.6518,
-        "lon": 139.7915,
-        "cost": 25.0,
-        "duration": 105,
-        "rating": 4.9,
-        "desc": "Mind-blowing barefoot digital art museum with infinity crystal rooms and interactive floating flower gardens.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      },
-      {
-        "name": "Tokyo National Museum",
-        "address": "13-9 Uenokoen, Taito City, Tokyo",
-        "lat": 35.7189,
-        "lon": 139.7765,
-        "cost": 6.5,
-        "duration": 105,
-        "rating": 4.8,
-        "desc": "Japan's oldest museum housing national treasures, samurai armor, swords, and Buddhist sculpture.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Asakusa Nakamise-dori Shopping Street",
-        "address": "1-36-3 Asakusa, Taito City, Tokyo",
-        "lat": 35.7125,
-        "lon": 139.796,
-        "cost": 5.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Traditional Edo-era market street selling handmade folding fans, yukata robes, and Ningyo-yaki sweets.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      },
-      {
-        "name": "Yanaka Ginza Historic Shitamachi Quarter",
-        "address": "3-13-1 Yanaka, Taito City, Tokyo",
-        "lat": 35.7275,
-        "lon": 139.7675,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Charming old Tokyo retro neighborhood that survived WWII with wooden craft shops and street snacks.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Akihabara Electric Town & Manga District",
-        "address": "Sotokanda, Chiyoda City, Tokyo",
-        "lat": 35.6983,
-        "lon": 139.7731,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Global mecca for electronics, anime figures, video games, maid cafes, and multi-story hobby towers.",
-        "photo_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=700&q=80"
-      },
-      {
-        "name": "Ginza Chuo-dori Luxury Shopping Boulevard",
-        "address": "Ginza, Chuo City, Tokyo",
-        "lat": 35.6718,
-        "lon": 139.765,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Tokyo's premier high-end fashion district with Ginza Six, luxury flagship stores, and department stores.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Shibuya Sky 360 Observatory",
-        "address": "2-24-12 Shibuya, Shibuya City, Tokyo",
-        "lat": 35.658,
-        "lon": 139.7016,
-        "cost": 15.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Open-air rooftop observatory 229 meters above Shibuya Crossing with panoramic Tokyo views and glass sky edge.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      },
-      {
-        "name": "Tokyo Skytree Tembo Deck (634m Tower)",
-        "address": "1-1-2 Oshiage, Sumida City, Tokyo",
-        "lat": 35.71,
-        "lon": 139.8107,
-        "cost": 18.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "World's tallest freestanding broadcast tower offering breathtaking vistas stretching to Mount Fuji.",
-        "photo_url": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Shinjuku Golden Gai Micro-Bars",
-        "address": "1-1-6 Kabukicho, Shinjuku City, Tokyo",
-        "lat": 35.6942,
-        "lon": 139.7045,
-        "cost": 20.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Network of six narrow alleys housing over 200 eccentric micro-bars, jazz taverns, and music dens.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      },
-      {
-        "name": "Shibuya Crossing & Nonbei Yokocho (Drunkard's Alley)",
-        "address": "1-25-10 Shibuya, Tokyo",
-        "lat": 35.6595,
-        "lon": 139.702,
-        "cost": 15.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Neon-lit crossing exploration followed by vintage Izakaya skewers under the train tracks.",
-        "photo_url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=700&q=80"
-      }
-    ]
-  },
-  "dubai": {
-    "history": [
-      {
-        "name": "Al Fahidi Historical Neighbourhood (Al Bastakiya)",
-        "address": "Al Fahidi Street, Bur Dubai, Dubai",
-        "lat": 25.2635,
-        "lon": 55.3003,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "19th-century heritage quarter featuring traditional gypsum wind towers, narrow sikkas, and art courtyards.",
-        "photo_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=80"
-      },
-      {
-        "name": "Dubai Museum & Al Fahidi Fort",
-        "address": "Al Fahidi, Bur Dubai, Dubai",
-        "lat": 25.263,
-        "lon": 55.2972,
-        "cost": 1.5,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Oldest existing building in Dubai built in 1787 documenting bedouin life, pearl diving, and desert archaeology.",
-        "photo_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=80"
-      },
-      {
-        "name": "Al Seef Heritage & Dhow Waterfront",
-        "address": "Dubai Creek, Bur Dubai, Dubai",
-        "lat": 25.258,
-        "lon": 55.312,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Picturesque restoration district along Dubai Creek blending old-world coral architecture with modern promenades.",
-        "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Arabian Tea House Restaurant & Cafe",
-        "address": "Al Fahidi Historical District, Bur Dubai, Dubai",
-        "lat": 25.264,
-        "lon": 55.301,
-        "cost": 18.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Enchanting garden courtyard serving authentic Emirati breakfast trays, Machboos, grilled Halloumi, and Karak chai.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Bu Qtair Coastal Fish Restaurant",
-        "address": "Old 32B Street, Fishing Harbour 2, Umm Suqeim, Dubai",
-        "lat": 25.1435,
-        "lon": 55.195,
-        "cost": 15.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Legendary fresh catch seafood shack famous for spicy marinated fried Pomfret and jumbo prawns.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Time Out Market Dubai",
-        "address": "Souk Al Bahar, Downtown Dubai, Dubai",
-        "lat": 25.195,
-        "lon": 55.278,
-        "cost": 22.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Gourmet culinary hall featuring 17 top homegrown chefs overlooking Burj Khalifa fountains.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Dubai Miracle Garden",
-        "address": "Al Barsha South 3, Dubailand, Dubai",
-        "lat": 25.06,
-        "lon": 55.244,
-        "cost": 20.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "World's largest natural flower garden displaying 150 million blooming flowers in full-size Emirates A380 planes and castles.",
-        "photo_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
-      },
-      {
-        "name": "Ras Al Khor Wildlife Sanctuary (Flamingo Haven)",
-        "address": "Ras Al Khor Road, Dubai",
-        "lat": 25.187,
-        "lon": 55.356,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Wetland nature reserve hosting thousands of wild pink flamingos and migratory birds.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "Museum of the Future",
-        "address": "Sheikh Zayed Road, Trade Centre, Dubai",
-        "lat": 25.2192,
-        "lon": 55.2818,
-        "cost": 40.0,
-        "duration": 105,
-        "rating": 4.9,
-        "desc": "Futuristic architectural marvel adorned with Arabic calligraphy exploring AI, bio-engineering, and space stations.",
-        "photo_url": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=700&q=80"
-      },
-      {
-        "name": "Alserkal Avenue Contemporary Arts District",
-        "address": "17th Street, Al Quoz 1, Dubai",
-        "lat": 25.142,
-        "lon": 55.228,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Industrial warehouse arts hub housing international galleries, indie film cinema, and artisan design studios.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Dubai Gold Souk & Spice Souk",
-        "address": "Al Ras, Deira, Dubai",
-        "lat": 25.2685,
-        "lon": 55.2975,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "World's most famous gold and saffron bazaar with traditional abra water taxi rides across Dubai Creek.",
-        "photo_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=700&q=80"
-      },
-      {
-        "name": "Jumeirah Mosque Cultural Tour",
-        "address": "Jumeirah Beach Road, Jumeirah 1, Dubai",
-        "lat": 25.2335,
-        "lon": 55.2655,
-        "cost": 7.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Iconic white stone Fatimid mosque offering guided cultural exchanges and Emirati dates with Arabic coffee.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "The Dubai Mall & Dubai Aquarium",
-        "address": "Financial Center Road, Downtown Dubai, Dubai",
-        "lat": 25.1972,
-        "lon": 55.2744,
-        "cost": 0.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "World's largest shopping destination with 1,200 stores, indoor Olympic ice rink, giant aquarium, and waterfall.",
-        "photo_url": "https://images.unsplash.com/photo-1532664189809-02133fee698d?w=700&q=80"
-      },
-      {
-        "name": "Mall of the Emirates & Ski Dubai",
-        "address": "Sheikh Zayed Road, Al Barsha 1, Dubai",
-        "lat": 25.118,
-        "lon": 55.2005,
-        "cost": 0.0,
-        "duration": 105,
-        "rating": 4.8,
-        "desc": "Luxury shopping resort featuring an indoor snow ski slope and luxury fashion dome.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Burj Khalifa 'At The Top' Skydeck (Level 124/125/148)",
-        "address": "1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, Dubai",
-        "lat": 25.1972,
-        "lon": 55.2744,
-        "cost": 45.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Ascend the world's tallest building (828m) for breathtaking 360-degree aerial views over the Arabian Gulf.",
-        "photo_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=700&q=80"
-      },
-      {
-        "name": "Dubai Desert Safari & 4x4 Dune Bashing",
-        "address": "Lahbab Red Dunes Desert, Dubai",
-        "lat": 24.96,
-        "lon": 55.61,
-        "cost": 35.0,
-        "duration": 180,
-        "rating": 4.9,
-        "desc": "High-octane red dune bashing, sandboarding, camel rides, and bedouin barbecue sunset dinner.",
-        "photo_url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "The Dubai Fountain Night Show & Burj Lake Promenade",
-        "address": "Downtown Dubai, Dubai",
-        "lat": 25.195,
-        "lon": 55.276,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.9,
-        "desc": "World's tallest choreographed fountain dancing to Arabic and world hits illuminated by 6,600 lights.",
-        "photo_url": "https://images.unsplash.com/photo-1594545032932-c0af37524660?w=700&q=80"
-      },
-      {
-        "name": "C\u00c9 LA VI Rooftop Sky Bar & Lounge",
-        "address": "Address Sky View, Downtown Dubai, Dubai",
-        "lat": 25.201,
-        "lon": 55.271,
-        "cost": 25.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Infinity pool sky bar overlooking Burj Khalifa skyline with signature cocktails and live DJ sets.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ]
-  },
-  "islamabad": {
-    "history": [
-      {
-        "name": "Faisal Mosque",
-        "address": "Shah Faisal Ave, E-8, Islamabad",
-        "lat": 33.7297,
-        "lon": 73.0372,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Iconic national mosque of Pakistan designed by Turkish architect Vedat Dalokay against Margalla Hills.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Faisal_Mosque_in_Islamabad.jpg/800px-Faisal_Mosque_in_Islamabad.jpg"
-      },
-      {
-        "name": "Pakistan Monument & Heritage Museum",
-        "address": "Shakarparian Hills, Islamabad",
-        "lat": 33.6934,
-        "lon": 73.0683,
-        "cost": 1.5,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Granite blooming flower monument and wax museum honoring the founding fathers of Pakistan.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pakistan_Monument%2C_Islamabad.jpg/800px-Pakistan_Monument%2C_Islamabad.jpg"
-      },
-      {
-        "name": "Saidpur Historic Village & Temples",
-        "address": "Saidpur, Margalla Foot, Islamabad",
-        "lat": 33.743,
-        "lon": 73.068,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "500-year-old Mughal and Hindu heritage stone village preserved at the base of Margalla Hills.",
-        "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Monal Restaurant (Margalla Ridge)",
-        "address": "Pir Sohawa Road, Margalla Hills, Islamabad",
-        "lat": 33.7842,
-        "lon": 73.0725,
-        "cost": 16.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Famous mountain-top dining overlooking illuminated Islamabad skyline with Mutton Karahi and Barbecue.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Monal_restaurant_in_Islamabad.jpg/800px-Monal_restaurant_in_Islamabad.jpg"
-      },
-      {
-        "name": "Kabul Restaurant (F-7 Markaz)",
-        "address": "F-7 Markaz Jinnah Super, Islamabad",
-        "lat": 33.721,
-        "lon": 73.056,
-        "cost": 10.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Renowned Afghan Kabuli Pulao, Chapli Kababs, and tender Lamb Tikka skewers.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Savour Foods (Blue Area)",
-        "address": "Blue Area, Jinnah Avenue, Islamabad",
-        "lat": 33.712,
-        "lon": 73.078,
-        "cost": 4.0,
-        "duration": 45,
-        "rating": 4.8,
-        "desc": "Pakistan's most iconic fragrant Pulao with Shami Kababs and crispy roast chicken.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Daman-e-Koh Margalla Viewpoint",
-        "address": "Daman-e-Koh Road, Islamabad",
-        "lat": 33.748,
-        "lon": 73.057,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Hilltop garden lookout offering sweeping panoramic views of Islamabad, Faisal Mosque, and Rawal Lake.",
-        "photo_url": "https://images.unsplash.com/photo-1546436836-07a91091f160?w=700&q=80"
-      },
-      {
-        "name": "Margalla Hills Trail 3 & 5 Hike",
-        "address": "Margalla Road, F-6/F-7, Islamabad",
-        "lat": 33.736,
-        "lon": 73.065,
-        "cost": 0.0,
-        "duration": 120,
-        "rating": 4.8,
-        "desc": "Popular pine-scented mountain hiking trails with wild monkeys and panoramic ridges.",
-        "photo_url": "https://images.unsplash.com/photo-1546436836-07a91091f160?w=700&q=80"
-      },
-      {
-        "name": "Rawal Lake & Lake View Park",
-        "address": "Murree Road, Rawal Dam, Islamabad",
-        "lat": 33.702,
-        "lon": 73.125,
-        "cost": 1.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Waterfront park featuring motorboat rides, bird aviary, and sunset picnic lawns.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Rawal_Lake_View.jpg/800px-Rawal_Lake_View.jpg"
-      }
-    ],
-    "art": [
-      {
-        "name": "National Art Gallery (PNCA)",
-        "address": "Sector F-5/1, Islamabad",
-        "lat": 33.731,
-        "lon": 73.088,
-        "cost": 1.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Four-story national art museum housing permanent collections of Sadequain, Chughtai, and modern sculptors.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Lok Virsa Heritage Museum",
-        "address": "Garden Ave, Shakarparian, Islamabad",
-        "lat": 33.689,
-        "lon": 73.071,
-        "cost": 2.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Living folk heritage museum presenting traditional lifestyles, textiles, and music from all regions of Pakistan.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lok_Virsa_Museum_entrance.jpg/800px-Lok_Virsa_Museum_entrance.jpg"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Centaurus Mall",
-        "address": "Jinnah Avenue, F-8/G-8, Islamabad",
-        "lat": 33.7075,
-        "lon": 73.0505,
-        "cost": 0.0,
-        "duration": 105,
-        "rating": 4.8,
-        "desc": "Signature triple-tower skyscraper mall featuring international brands, cinema, and food court.",
-        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Centaurus_Mall_Islamabad.jpg/800px-Centaurus_Mall_Islamabad.jpg"
-      },
-      {
-        "name": "Jinnah Super Market (F-7 Markaz)",
-        "address": "F-7 Markaz, Islamabad",
-        "lat": 33.7215,
-        "lon": 73.057,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Famous round outdoor market with handicrafts, bookshops, cafes, and leather goods.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Pir Sohawa Ridge & Highland Resort",
-        "address": "Pir Sohawa, Haripur Border, Margalla",
-        "lat": 33.795,
-        "lon": 73.11,
-        "cost": 5.0,
-        "duration": 120,
-        "rating": 4.7,
-        "desc": "High altitude ridge adventures with zip-lining, mountain biking, and breezy viewpoints.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "F-6 Super Market Night Cafes & Gelaterias",
-        "address": "F-6 Markaz, Islamabad",
-        "lat": 33.73,
-        "lon": 73.072,
-        "cost": 8.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Upscale late-night open-air coffee culture with artisanal bakeries and international eateries.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ]
-  },
-  "karachi": {
-    "history": [
-      {
-        "name": "Mazar-e-Quaid (Jinnah Mausoleum)",
-        "address": "M.A. Jinnah Road, Karachi",
-        "lat": 24.8753,
-        "lon": 67.0408,
-        "cost": 0.5,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Monumental white marble mausoleum of Quaid-e-Azam Muhammad Ali Jinnah surrounded by lush gardens.",
-        "photo_url": "https://images.unsplash.com/photo-1590012314607-cda9d9b699ae?w=700&q=80"
-      },
-      {
-        "name": "Mohatta Palace Museum",
-        "address": "Hatcliff, Clifton, Karachi",
-        "lat": 24.8142,
-        "lon": 67.0326,
-        "cost": 1.5,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Exquisite 1927 Rajasthani pink Jodhpur stone palace built by Shivratan Mohatta with stained glass domes.",
-        "photo_url": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=700&q=80"
-      },
-      {
-        "name": "Empress Market",
-        "address": "Saddar, Karachi",
-        "lat": 24.862,
-        "lon": 67.027,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.6,
-        "desc": "Victorian gothic clocktower market built in 1889 in the historic commercial heart of Saddar.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Burns Road Historic Food Street",
-        "address": "Burns Road, Saddar, Karachi",
-        "lat": 24.856,
-        "lon": 67.019,
-        "cost": 8.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "Birthplace of Karachi street food: Waheed Kabab House Nihari & Fry Kababs, Matka Kheer, and Rabri.",
-        "photo_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80"
-      },
-      {
-        "name": "Kolachi Restaurant (Do Darya Waterfront)",
-        "address": "Phase 8 DHA, Karachi",
-        "lat": 24.761,
-        "lon": 67.085,
-        "cost": 22.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Famous seaside open-air wooden deck dining on Arabian Sea serving Sajji, Peshawari Karahi, and seafood.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Javed Nihari (Federal B Area)",
-        "address": "Dastagir, F.B Area, Karachi",
-        "lat": 24.928,
-        "lon": 67.065,
-        "cost": 6.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "World-famous slow-simmered Nalli Nihari garnished with ginger and green chillies.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Clifton Beach & Sea View Promenade",
-        "address": "Sea View, Clifton, Karachi",
-        "lat": 24.795,
-        "lon": 67.03,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Iconic Arabian Sea coastline popular for camel rides, buggy sprints, and sunset ocean breezes.",
-        "photo_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80"
-      },
-      {
-        "name": "Turtle Beach & Hawksbay Sand Dunes",
-        "address": "Hawksbay Road, Karachi",
-        "lat": 24.85,
-        "lon": 66.86,
-        "cost": 5.0,
-        "duration": 120,
-        "rating": 4.8,
-        "desc": "Pristine sandy beach with green turtle nesting grounds and coastal huts.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "National Museum of Pakistan",
-        "address": "Burns Garden, Dr. Ziauddin Road, Karachi",
-        "lat": 24.854,
-        "lon": 67.018,
-        "cost": 1.0,
-        "duration": 90,
-        "rating": 4.7,
-        "desc": "Museum featuring the 4,500-year-old Priest-King of Mohenjo-daro and Quranic manuscripts.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Port Grand Heritage & Waterfront Food",
-        "address": "Near Jinnah Flyover, Karachi Port, Karachi",
-        "lat": 24.838,
-        "lon": 66.985,
-        "cost": 3.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Pedestrian heritage boulevard along Karachi Harbour with 150-year-old native trees and arts stalls.",
-        "photo_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Dolmen Mall Clifton",
-        "address": "Marine Drive, Block 4 Clifton, Karachi",
-        "lat": 24.812,
-        "lon": 67.031,
-        "cost": 0.0,
-        "duration": 105,
-        "rating": 4.9,
-        "desc": "Premier seaside shopping mall with luxury international brands and ocean views.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      },
-      {
-        "name": "Zainab Market (Saddar)",
-        "address": "Abdullah Haroon Road, Saddar, Karachi",
-        "lat": 24.853,
-        "lon": 67.026,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Famous bustling export-remnant market for leather jackets, denim, brassware, and onyx handicrafts.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Scuba Diving & Churna Island Boat Tour",
-        "address": "Churna Island, Mubarak Village, Karachi",
-        "lat": 24.895,
-        "lon": 66.605,
-        "cost": 35.0,
-        "duration": 240,
-        "rating": 4.9,
-        "desc": "Coral reef boat safari with snorkeling, cliff diving, and underwater marine exploration.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Do Darya Seaside Strip",
-        "address": "Abdul Sattar Edhi Ave, DHA Phase 8, Karachi",
-        "lat": 24.762,
-        "lon": 67.087,
-        "cost": 20.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "String of illuminated ocean-deck restaurants stretching over the waves open until 3:00 AM.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ]
-  },
-  "skardu": {
-    "history": [
-      {
-        "name": "Kharpocho Fort (King of Forts)",
-        "address": "Skardu Rock, Skardu",
-        "lat": 35.3041,
-        "lon": 75.6396,
-        "cost": 2.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "8th-century clifftop fortress perched 1,400 feet above the Indus River offering panoramic valley vistas.",
-        "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80"
-      },
-      {
-        "name": "Shigar Fort (Fong-Khar Palace)",
-        "address": "Shigar Valley, Skardu",
-        "lat": 35.428,
-        "lon": 75.745,
-        "cost": 4.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "400-year-old restored wooden Raja Palace at the gateway to K2 and Karakoram glaciers.",
-        "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80"
-      },
-      {
-        "name": "Manthal Buddha Rock Carving",
-        "address": "Manthal Village, Skardu",
-        "lat": 35.267,
-        "lon": 75.642,
-        "cost": 1.0,
-        "duration": 45,
-        "rating": 4.7,
-        "desc": "9th-century Tibetan Buddhist rock relief depicting Buddha surrounded by disciples.",
-        "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Shangrila Resort & Lower Kachura Lake",
-        "address": "Kachura, Skardu",
-        "lat": 35.421,
-        "lon": 75.452,
-        "cost": 5.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "Heavenly heart-shaped emerald alpine lake with pagoda cottages against snow-capped peaks.",
-        "photo_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80"
-      },
-      {
-        "name": "Upper Kachura Lake",
-        "address": "Upper Kachura, Skardu",
-        "lat": 35.443,
-        "lon": 75.448,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Deep crystal-clear turquoise lake surrounded by wild apricot orchards and trout streams.",
-        "photo_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80"
-      },
-      {
-        "name": "Deosai National Park (Land of Giants)",
-        "address": "Deosai Plateau, Skardu",
-        "lat": 35.05,
-        "lon": 75.5,
-        "cost": 5.0,
-        "duration": 240,
-        "rating": 5.0,
-        "desc": "Second highest plateau on Earth (13,497ft) carpeted in wildflowers with Sheosar Lake and Himalayan brown bears.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      },
-      {
-        "name": "Katpana Cold Desert & Sand Dunes",
-        "address": "Katpana, Skardu",
-        "lat": 35.335,
-        "lon": 75.595,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "World's highest cold desert with rolling white sand dunes often dusted with winter snow.",
-        "photo_url": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Dewan-e-Khas Traditional Balti Restaurant",
-        "address": "Kazmi Bazaar, Skardu",
-        "lat": 35.298,
-        "lon": 75.632,
-        "cost": 8.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Authentic Balti culinary dishes: Marzan, Prapoo noodles, Yak Meat Stew, and Butter Chai.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Kazmi Bazaar & Gemstone Souk",
-        "address": "Main Skardu Bazaar, Skardu",
-        "lat": 35.297,
-        "lon": 75.633,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.7,
-        "desc": "Lively Himalayan market famous for raw aquamarine, ruby gemstones, Balti caps, and dried apricots.",
-        "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Basho Valley Pine Forest Trek & Suspension Bridge",
-        "address": "Basho Valley, Skardu",
-        "lat": 35.48,
-        "lon": 75.25,
-        "cost": 0.0,
-        "duration": 180,
-        "rating": 4.9,
-        "desc": "Thrilling off-road 4x4 jeep trail and trekking through alpine meadows and wooden suspension bridges.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Baltistan Artisan Wool & Dry Fruit Guilds",
-        "address": "Airport Road, Skardu",
-        "lat": 35.31,
-        "lon": 75.62,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Handcrafted pure pashmina shawls, mountain honey, walnuts, and organic dried cherries.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Bonfire Stargazing at Katpana Desert Camp",
-        "address": "Katpana Desert, Skardu",
-        "lat": 35.335,
-        "lon": 75.595,
-        "cost": 10.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "Magical milky way stargazing and live acoustic Balti folk music around glowing desert bonfires.",
-        "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "Balti Heritage Wood Carving Guild",
-        "address": "Shigar, Skardu",
-        "lat": 35.425,
-        "lon": 75.74,
-        "cost": 0.0,
-        "duration": 60,
-        "rating": 4.7,
-        "desc": "Traditional Kashmiri and Tibetan intricate floral wood relief carving workshops.",
-        "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
-      }
-    ]
-  },
-  "paris": {
-    "history": [
-      {
-        "name": "Eiffel Tower (Tour Eiffel)",
-        "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
-        "lat": 48.8584,
-        "lon": 2.2945,
-        "cost": 28.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "World's most iconic 1889 wrought-iron tower offering sensational summit views of Paris.",
-        "photo_url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=700&q=80"
-      },
-      {
-        "name": "Notre-Dame Cathedral & \u00cele de la Cit\u00e9",
-        "address": "6 Parvis Notre-Dame, 75004 Paris",
-        "lat": 48.853,
-        "lon": 2.3499,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Masterpiece of French Gothic architecture with gargoyles, rose windows, and royal history on the Seine.",
-        "photo_url": "https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=700&q=80"
-      },
-      {
-        "name": "Arc de Triomphe & Champs-\u00c9lys\u00e9es",
-        "address": "Pl. Charles de Gaulle, 75008 Paris",
-        "lat": 48.8738,
-        "lon": 2.295,
-        "cost": 16.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Napoleonic triumphal arch honoring French soldiers with a rooftop view overlooking 12 radiating grand avenues.",
-        "photo_url": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=700&q=80"
-      }
-    ],
-    "art": [
-      {
-        "name": "Louvre Museum (Mona Lisa & Venus de Milo)",
-        "address": "Rue de Rivoli, 75001 Paris",
-        "lat": 48.8606,
-        "lon": 2.3376,
-        "cost": 22.0,
-        "duration": 180,
-        "rating": 4.9,
-        "desc": "World's largest art museum holding 380,000 historic objects, Leonardo da Vinci's Mona Lisa, and the Glass Pyramid.",
-        "photo_url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80"
-      },
-      {
-        "name": "Mus\u00e9e d'Orsay",
-        "address": "1 Rue de la L\u00e9gion d'Honneur, 75007 Paris",
-        "lat": 48.8599,
-        "lon": 2.3266,
-        "cost": 16.0,
-        "duration": 120,
-        "rating": 4.9,
-        "desc": "Converted Beaux-Arts railway station holding the world's finest Impressionist masterpieces by Monet, Van Gogh, and Renoir.",
-        "photo_url": "https://images.unsplash.com/photo-1567942712661-0f0f8d89b7b8?w=700&q=80"
-      }
-    ],
-    "food": [
-      {
-        "name": "Le Comptoir du Relais Bistro",
-        "address": "9 Carrefour de l'Od\u00e9on, 75006 Paris",
-        "lat": 48.852,
-        "lon": 2.338,
-        "cost": 35.0,
-        "duration": 75,
-        "rating": 4.8,
-        "desc": "Classic Parisian bistro serving Duck Confit, Escargots de Bourgogne, fresh Baguettes, and Creme Brulee.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      },
-      {
-        "name": "Rue Cler Market Street Food Walk",
-        "address": "Rue Cler, 75007 Paris",
-        "lat": 48.8565,
-        "lon": 2.3055,
-        "cost": 15.0,
-        "duration": 60,
-        "rating": 4.8,
-        "desc": "Quintessential foodie street filled with artisanal fromageries, warm croissants, macaron stalls, and creperies.",
-        "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
-      }
-    ],
-    "nature": [
-      {
-        "name": "Jardin du Luxembourg (Luxembourg Gardens)",
-        "address": "75006 Paris",
-        "lat": 48.8462,
-        "lon": 2.3372,
-        "cost": 0.0,
-        "duration": 75,
-        "rating": 4.9,
-        "desc": "61-acre royal garden palace with tree-lined promenades, the Medici Fountain, and model sailboat ponds.",
-        "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
-      }
-    ],
-    "culture": [
-      {
-        "name": "Montmartre & Sacr\u00e9-C\u0153ur Basilica",
-        "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
-        "lat": 48.8867,
-        "lon": 2.3431,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.9,
-        "desc": "Bohemian hilltop village of artists at Place du Tertre leading to the white-domed Sacr\u00e9-C\u0153ur Basilica.",
-        "photo_url": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?w=700&q=80"
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Galeries Lafayette Haussmann (Glass Dome)",
-        "address": "40 Bd Haussmann, 75009 Paris",
-        "lat": 48.8732,
-        "lon": 2.332,
-        "cost": 0.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Legendary Art Nouveau luxury department store crowned with a stained-glass coupola and free rooftop terrace.",
-        "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Seine River Sunset Bateaux Mouches Cruise",
-        "address": "Pont de l'Alma, 75008 Paris",
-        "lat": 48.8635,
-        "lon": 2.3015,
-        "cost": 18.0,
-        "duration": 70,
-        "rating": 4.8,
-        "desc": "Open-air scenic river cruise gliding under illuminated Parisian bridges past the Louvre and Eiffel Tower.",
-        "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Le Marais Night Lounges & Cocktail Bars",
-        "address": "Rue des Rosiers, 75004 Paris",
-        "lat": 48.8575,
-        "lon": 2.359,
-        "cost": 22.0,
-        "duration": 90,
-        "rating": 4.8,
-        "desc": "Vibrant historic quartier buzzing with rooftop speakeasies, wine caves, and late-night jazz.",
-        "photo_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=80"
-      }
-    ]
-  },
-  "new york": {
-    "history": [
-      {
-        "name": "Statue of Liberty",
-        "desc": "Iconic copper statue and national monument.",
-        "address": "Liberty Island",
-        "cost": 25,
-        "duration": 180,
-        "rating": 4.9,
-        "lat": 40.6892,
-        "lon": -74.0445
-      },
-      {
-        "name": "9/11 Memorial & Museum",
-        "desc": "Memorial and museum honoring the victims.",
-        "address": "180 Greenwich St",
-        "cost": 33,
-        "duration": 120,
-        "rating": 4.8,
-        "lat": 40.7115,
-        "lon": -74.0132
-      },
-      {
-        "name": "Empire State Building",
-        "desc": "Historical Art Deco skyscraper with observatory.",
-        "address": "350 5th Ave",
-        "cost": 44,
-        "duration": 90,
-        "rating": 4.7,
-        "lat": 40.7484,
-        "lon": -73.9857
-      }
-    ],
-    "nature": [
-      {
-        "name": "Central Park",
-        "desc": "Vast urban park in the middle of Manhattan.",
-        "address": "Manhattan",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.9,
-        "lat": 40.7812,
-        "lon": -73.9665
-      },
-      {
-        "name": "The High Line",
-        "desc": "Elevated linear park on a former railway.",
-        "address": "Chelsea",
-        "cost": 0,
-        "duration": 90,
-        "rating": 4.8,
-        "lat": 40.7479,
-        "lon": -74.0048
-      },
-      {
-        "name": "Brooklyn Botanic Garden",
-        "desc": "Beautiful 52-acre botanical garden.",
-        "address": "990 Washington Ave",
-        "cost": 18,
-        "duration": 120,
-        "rating": 4.8,
-        "lat": 40.6662,
-        "lon": -73.9626
-      }
-    ],
-    "culture": [
-      {
-        "name": "Metropolitan Museum of Art",
-        "desc": "One of the world's largest art museums.",
-        "address": "1000 5th Ave",
-        "cost": 30,
-        "duration": 180,
-        "rating": 4.9,
-        "lat": 40.7794,
-        "lon": -73.9632
-      },
-      {
-        "name": "Broadway Theatre District",
-        "desc": "The heart of commercial theatrical performances.",
-        "address": "Midtown Manhattan",
-        "cost": 100,
-        "duration": 180,
-        "rating": 4.8,
-        "lat": 40.759,
-        "lon": -73.9845
-      },
-      {
-        "name": "Museum of Modern Art (MoMA)",
-        "desc": "World-class collection of modern art.",
-        "address": "11 W 53rd St",
-        "cost": 28,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 40.7614,
-        "lon": -73.9776
-      }
-    ],
-    "food": [
-      {
-        "name": "Chelsea Market",
-        "desc": "Food hall, shopping mall, and television production facility.",
-        "address": "75 9th Ave",
-        "cost": 25,
-        "duration": 60,
-        "rating": 4.8,
-        "lat": 40.742,
-        "lon": -74.0048
-      },
-      {
-        "name": "Katz's Delicatessen",
-        "desc": "Iconic kosher-style deli known for pastrami.",
-        "address": "205 E Houston St",
-        "cost": 35,
-        "duration": 60,
-        "rating": 4.7,
-        "lat": 40.7222,
-        "lon": -73.9874
-      },
-      {
-        "name": "Joe's Pizza",
-        "desc": "Famous classic New York slice pizza.",
-        "address": "7 Carmine St",
-        "cost": 5,
-        "duration": 30,
-        "rating": 4.8,
-        "lat": 40.7306,
-        "lon": -74.0021
-      }
-    ],
-    "art": [
-      {
-        "name": "Guggenheim Museum",
-        "desc": "Modern and contemporary art in an iconic building.",
-        "address": "1071 5th Ave",
-        "cost": 25,
-        "duration": 120,
-        "rating": 4.6,
-        "lat": 40.783,
-        "lon": -73.959
-      },
-      {
-        "name": "Whitney Museum of American Art",
-        "desc": "Focuses on 20th- and 21st-century American art.",
-        "address": "99 Gansevoort St",
-        "cost": 25,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 40.7396,
-        "lon": -74.0089
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Times Square at Night",
-        "desc": "Bustling, neon-lit commercial intersection and tourist hub.",
-        "address": "Midtown Manhattan",
-        "cost": 0,
-        "duration": 90,
-        "rating": 4.7,
-        "lat": 40.758,
-        "lon": -73.9855
-      },
-      {
-        "name": "Greenwich Village Jazz Clubs",
-        "desc": "Historic neighborhood known for its vibrant jazz scene.",
-        "address": "Greenwich Village",
-        "cost": 20,
-        "duration": 120,
-        "rating": 4.8,
-        "lat": 40.7336,
-        "lon": -74.0027
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Fifth Avenue",
-        "desc": "Famous shopping street with luxury boutiques.",
-        "address": "5th Ave",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.8,
-        "lat": 40.7744,
-        "lon": -73.9656
-      },
-      {
-        "name": "SoHo Shopping District",
-        "desc": "Trendy neighborhood with designer boutiques and galleries.",
-        "address": "SoHo",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 40.7233,
-        "lon": -74.003
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Statue of Liberty Crown Tour",
-        "desc": "Climb up to the crown of the Statue of Liberty.",
-        "address": "Liberty Island",
-        "cost": 25,
-        "duration": 180,
-        "rating": 4.9,
-        "lat": 40.6892,
-        "lon": -74.0445
-      }
-    ]
-  },
-  "beijing": {
-    "history": [
-      {
-        "name": "Forbidden City",
-        "desc": "Vast imperial palace complex from the Ming dynasty.",
-        "address": "Dongcheng",
-        "cost": 9,
-        "duration": 240,
-        "rating": 4.9,
-        "lat": 39.9163,
-        "lon": 116.3972
-      },
-      {
-        "name": "Temple of Heaven",
-        "desc": "Imperial religious complex visited by emperors.",
-        "address": "Dongcheng",
-        "cost": 5,
-        "duration": 120,
-        "rating": 4.8,
-        "lat": 39.8822,
-        "lon": 116.4066
-      },
-      {
-        "name": "Summer Palace",
-        "desc": "Vast ensemble of lakes, gardens and palaces.",
-        "address": "Haidian District",
-        "cost": 8,
-        "duration": 180,
-        "rating": 4.8,
-        "lat": 39.9997,
-        "lon": 116.2677
-      }
-    ],
-    "nature": [
-      {
-        "name": "Jingshan Park",
-        "desc": "Imperial park offering panoramic views of the Forbidden City.",
-        "address": "Jingshan Front St",
-        "cost": 1,
-        "duration": 60,
-        "rating": 4.7,
-        "lat": 39.9255,
-        "lon": 116.3969
-      },
-      {
-        "name": "Beihai Park",
-        "desc": "One of the oldest imperial gardens in China.",
-        "address": "Xicheng",
-        "cost": 3,
-        "duration": 120,
-        "rating": 4.6,
-        "lat": 39.9284,
-        "lon": 116.3831
-      },
-      {
-        "name": "Olympic Forest Park",
-        "desc": "Expansive park built for the 2008 Olympics.",
-        "address": "Chaoyang",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 40.0163,
-        "lon": 116.392
-      }
-    ],
-    "culture": [
-      {
-        "name": "National Museum of China",
-        "desc": "Massive museum showcasing Chinese history and art.",
-        "address": "Tiananmen Square",
-        "cost": 0,
-        "duration": 180,
-        "rating": 4.8,
-        "lat": 39.9038,
-        "lon": 116.3976
-      },
-      {
-        "name": "798 Art Zone",
-        "desc": "Thriving contemporary art district in decommissioned factories.",
-        "address": "Chaoyang",
-        "cost": 0,
-        "duration": 150,
-        "rating": 4.8,
-        "lat": 39.9833,
-        "lon": 116.4883
-      },
-      {
-        "name": "Lama Temple (Yonghe Temple)",
-        "desc": "Renowned Tibetan Buddhist temple.",
-        "address": "Dongcheng",
-        "cost": 4,
-        "duration": 90,
-        "rating": 4.7,
-        "lat": 39.9472,
-        "lon": 116.4172
-      }
-    ],
-    "food": [
-      {
-        "name": "Quanjude Roast Duck",
-        "desc": "Famous restaurant known for its Peking duck.",
-        "address": "Dongcheng",
-        "cost": 40,
-        "duration": 90,
-        "rating": 4.7,
-        "lat": 39.9141,
-        "lon": 116.4116
-      },
-      {
-        "name": "Wangfujing Snack Street",
-        "desc": "Bustling street with exotic local street food.",
-        "address": "Wangfujing",
-        "cost": 15,
-        "duration": 60,
-        "rating": 4.5,
-        "lat": 39.9126,
-        "lon": 116.4111
-      },
-      {
-        "name": "Nanluoguxiang",
-        "desc": "Ancient alleyway packed with trendy cafes and snacks.",
-        "address": "Dongcheng",
-        "cost": 20,
-        "duration": 90,
-        "rating": 4.7,
-        "lat": 39.9366,
-        "lon": 116.4029
-      }
-    ],
-    "art": [
-      {
-        "name": "National Centre for the Performing Arts",
-        "desc": "Iconic egg-shaped arts center.",
-        "address": "Xicheng",
-        "cost": 5,
-        "duration": 90,
-        "rating": 4.8,
-        "lat": 39.9031,
-        "lon": 116.3897
-      }
-    ],
-    "nightlife": [
-      {
-        "name": "Sanlitun Bar Street",
-        "desc": "Famous destination for nightlife and international dining.",
-        "address": "Chaoyang",
-        "cost": 30,
-        "duration": 120,
-        "rating": 4.6,
-        "lat": 39.9348,
-        "lon": 116.4552
-      },
-      {
-        "name": "Houhai Bar Street",
-        "desc": "Bars and cafes surrounding the beautiful Houhai lake.",
-        "address": "Xicheng",
-        "cost": 25,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 39.9382,
-        "lon": 116.3831
-      }
-    ],
-    "shopping": [
-      {
-        "name": "Wangfujing Pedestrian Street",
-        "desc": "One of the most famous shopping streets in Beijing.",
-        "address": "Dongcheng",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.7,
-        "lat": 39.912,
-        "lon": 116.4111
-      },
-      {
-        "name": "Silk Market (Xiushui)",
-        "desc": "Popular indoor market known for knockoffs and silk.",
-        "address": "Chaoyang",
-        "cost": 0,
-        "duration": 120,
-        "rating": 4.4,
-        "lat": 39.9096,
-        "lon": 116.4468
-      }
-    ],
-    "adventure": [
-      {
-        "name": "Mutianyu Great Wall Hike",
-        "desc": "Less crowded, scenic section of the Great Wall.",
-        "address": "Huairou District",
-        "cost": 15,
-        "duration": 240,
-        "rating": 4.9,
-        "lat": 40.4319,
-        "lon": 116.5704
-      }
-    ]
-  }
+    "faisalabad": {
+        "history": [
+            {
+                "place_id": "fsd-history-1",
+                "name": "Ghanta Ghar",
+                "category": "history",
+                "rating": 4.6,
+                "price_tier": 1,
+                "lat": 31.4181,
+                "lon": 73.0776,
+                "address": "Clock Tower, Faisalabad",
+                "opening_hours": {
+                    "open": "00:00",
+                    "close": "23:59"
+                },
+                "visit_duration_min": 60,
+                "description": "The iconic Clock Tower situated in the center of eight bazaars.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 0.0
+            }
+        ],
+        "shopping": [
+            {
+                "place_id": "fsd-shopping-1",
+                "name": "D-Ground",
+                "category": "shopping",
+                "rating": 4.5,
+                "price_tier": 2,
+                "lat": 31.4116,
+                "lon": 73.1118,
+                "address": "Peoples Colony, Faisalabad",
+                "opening_hours": {
+                    "open": "10:00",
+                    "close": "23:00"
+                },
+                "visit_duration_min": 120,
+                "description": "The commercial hub of the city featuring top brands and eateries.",
+                "photo_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80",
+                "est_cost": 20.0
+            }
+        ]
+    },
+    "lahore": {
+        "history": [
+            {
+                "name": "Badshahi Mosque",
+                "address": "Walled City, Lahore",
+                "lat": 31.5882,
+                "lon": 74.3095,
+                "cost": 1.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "Grand 1673 Mughal architectural masterpiece built with red sandstone and white marble domes.",
+                "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Badshahi_Mosque_front_view.jpg/800px-Badshahi_Mosque_front_view.jpg"
+            },
+            {
+                "name": "Lahore Fort (Shahi Qila) & Sheesh Mahal",
+                "address": "Fort Road, Walled City, Lahore",
+                "lat": 31.588,
+                "lon": 74.3152,
+                "cost": 3.0,
+                "duration": 120,
+                "rating": 4.9,
+                "desc": "UNESCO World Heritage fortress with the Palace of Mirrors (Sheesh Mahal), Naulakha Pavilion, and Elephant Steps.",
+                "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Lahore_Fort_view.jpg/800px-Lahore_Fort_view.jpg"
+            },
+            {
+                "name": "Wazir Khan Mosque & Shahi Hammam",
+                "address": "Delhi Gate, Walled City, Lahore",
+                "lat": 31.583,
+                "lon": 74.3235,
+                "cost": 1.5,
+                "duration": 60,
+                "rating": 4.9,
+                "desc": "The jewel of Mughal fresco tile art, renowned for Persian mosaics and 17th-century royal Turkish baths.",
+                "photo_url": "https://images.unsplash.com/photo-1557683316-973673baf926?w=700&q=80"
+            },
+            {
+                "name": "Shalimar Gardens (Shalamar Bagh)",
+                "address": "GT Road, Shalimar Town, Lahore",
+                "lat": 31.5862,
+                "lon": 74.3824,
+                "cost": 2.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "UNESCO Mughal garden complex featuring 410 cascading fountains, marble pavilions, and terraced waterways.",
+                "photo_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=700&q=80"
+            },
+            {
+                "name": "Minar-e-Pakistan",
+                "lat": 31.5925,
+                "lon": 74.3095,
+                "desc": "National monument marking the site where the Lahore Resolution was passed.",
+                "address": "Greater Iqbal Park, Lahore",
+                "cost": 5,
+                "duration": 60
+            },
+            {
+                "name": "Data Darbar",
+                "lat": 31.5778,
+                "lon": 74.3044,
+                "desc": "One of the oldest Muslim shrines in South Asia.",
+                "address": "Data Ganj Bakhsh Road, Lahore",
+                "cost": 0,
+                "duration": 45
+            }
+        ],
+        "food": [
+            {
+                "name": "Haveli Restaurant (Fort Road Food Street)",
+                "address": "Fort Road, Walled City, Lahore",
+                "lat": 31.5875,
+                "lon": 74.3115,
+                "cost": 18.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "Rooftop dining overlooking floodlit Badshahi Mosque serving Mutton Karahi, Chapli Kababs, and Roghani Naan.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Gawalmandi Historic Food Street",
+                "address": "Gawalmandi, Lahore",
+                "lat": 31.571,
+                "lon": 74.318,
+                "cost": 8.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Legendary birthplace of Lahori food: Taka Tak, Feeka Lassi, Fried Fish, and Hareesa.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Anarkali Food Street & Bano Falooda",
+                "address": "Old Anarkali, Lahore",
+                "lat": 31.564,
+                "lon": 74.314,
+                "cost": 6.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Famous Old Anarkali street food, Gol Gappay, Karahi Tikka, and world-renowned Bano Falooda.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            }
+        ],
+        "nature": [
+            {
+                "name": "Bagh-e-Jinnah (Lawrence Gardens)",
+                "address": "Mall Road, Civil Lines, Lahore",
+                "lat": 31.5535,
+                "lon": 74.3315,
+                "cost": 0.5,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Botanical garden oasis with Victorian greenhouses, open-air theater, and century-old oak trees.",
+                "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
+            },
+            {
+                "name": "Jallo Park & Butterfly Botanical Sanctuary",
+                "address": "Jallo, GT Road, Lahore",
+                "lat": 31.578,
+                "lon": 74.475,
+                "cost": 2.0,
+                "duration": 120,
+                "rating": 4.7,
+                "desc": "Expansive safari park with a butterfly house, boating lake, and shady forest groves.",
+                "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
+            }
+        ],
+        "art": [
+            {
+                "name": "Lahore Museum",
+                "address": "Mall Road, Anarkali, Lahore",
+                "lat": 31.5683,
+                "lon": 74.3082,
+                "cost": 3.0,
+                "duration": 105,
+                "rating": 4.8,
+                "desc": "Pakistan's oldest museum housing the world-famous Fasting Buddha of Gandhara and Mughal mini-paintings.",
+                "photo_url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=80"
+            },
+            {
+                "name": "Alhamra Arts Council & Gallery",
+                "address": "Mall Road, Lahore",
+                "lat": 31.557,
+                "lon": 74.328,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.7,
+                "desc": "Award-winning red-brick contemporary arts complex showcasing modern Pakistani masters and classical music.",
+                "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
+            }
+        ],
+        "culture": [
+            {
+                "name": "Delhi Gate & Royal Trail (Guzargah)",
+                "address": "Delhi Gate, Walled City, Lahore",
+                "lat": 31.5825,
+                "lon": 74.325,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "Historic royal procession path through ancient spice bazaars, painted havelis, and Mughal gates.",
+                "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
+            },
+            {
+                "name": "Anarkali Bazaar Heritage Walk",
+                "address": "Anarkali, Mall Road, Lahore",
+                "lat": 31.566,
+                "lon": 74.312,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "South Asia's oldest surviving market named after court courtesan Anarkali, packed with silk and jewelry.",
+                "photo_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80"
+            }
+        ],
+        "shopping": [
+            {
+                "name": "Packages Mall",
+                "address": "Walton Road, Gulxberg, Lahore",
+                "lat": 31.472,
+                "lon": 74.358,
+                "cost": 0.0,
+                "duration": 120,
+                "rating": 4.8,
+                "desc": "Mega luxury lifestyle mall featuring 200+ global brands, multiplex cinema, and gourmet food court.",
+                "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
+            },
+            {
+                "name": "Emporium Mall",
+                "address": "Johar Town, Lahore",
+                "lat": 31.468,
+                "lon": 74.275,
+                "cost": 0.0,
+                "duration": 120,
+                "rating": 4.8,
+                "desc": "One of South Asia's largest retail centers with an indoor theme park and global fashion flagships.",
+                "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Wagah Border Flag Lowering Ceremony",
+                "address": "Wagah Border, Lahore",
+                "lat": 31.6048,
+                "lon": 74.5724,
+                "cost": 0.0,
+                "duration": 120,
+                "rating": 4.9,
+                "desc": "Thrilling military parade and sunset flag-lowering spectacle with thousands of cheering spectators.",
+                "photo_url": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=700&q=80"
+            },
+            {
+                "name": "Joyland & Fortress Stadium Rides",
+                "address": "Fortress Stadium, Cantt, Lahore",
+                "lat": 31.532,
+                "lon": 74.365,
+                "cost": 6.0,
+                "duration": 90,
+                "rating": 4.6,
+                "desc": "High-adrenaline amusement rides, discovery wheels, and carnival games in Cantt.",
+                "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "MM Alam Road Night Cafes & Lounges",
+                "address": "MM Alam Road, Gulberg III, Lahore",
+                "lat": 31.516,
+                "lon": 74.352,
+                "cost": 15.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Chic midnight promenade filled with artisanal espresso bars, patisseries, and open-air lounges.",
+                "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
+            },
+            {
+                "name": "DHA Raya Fairways Midnight Promenade",
+                "address": "Phase 6 DHA, Lahore",
+                "lat": 31.455,
+                "lon": 74.432,
+                "cost": 12.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Upscale illuminated European-style square with golf course vistas, live music, and dessert parlors.",
+                "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
+            }
+        ]
+    },
+    "tokyo": {
+        "history": [
+            {
+                "name": "Sens\u014d-ji Temple",
+                "address": "2-3-1 Asakusa, Taito City, Tokyo",
+                "lat": 35.7147,
+                "lon": 139.7967,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "Tokyo's oldest Buddhist temple founded in 645 AD, famous for the giant Kaminarimon Red Lantern.",
+                "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
+            },
+            {
+                "name": "Meiji Jingu Shrine",
+                "address": "1-1 Yoyogikamizonocho, Shibuya City, Tokyo",
+                "lat": 35.6764,
+                "lon": 139.6993,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "Serene Shinto shrine dedicated to Emperor Meiji nestled within an evergreen sacred forest of 100,000 trees.",
+                "photo_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80"
+            },
+            {
+                "name": "Imperial Palace East Gardens & Edo Castle Moat",
+                "address": "1-1 Chiyoda, Chiyoda City, Tokyo",
+                "lat": 35.6852,
+                "lon": 139.7528,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Historic Edo Castle stone ramparts, Ninomaru Japanese garden, and imperial palace pine bridges.",
+                "photo_url": "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?w=700&q=80"
+            }
+        ],
+        "food": [
+            {
+                "name": "Tsukiji Outer Seafood Market",
+                "address": "4 Chome Tsukiji, Chuo City, Tokyo",
+                "lat": 35.6655,
+                "lon": 139.7708,
+                "cost": 18.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "World-famous foodie labyrinth with fresh sashimi bowls, grilled wagyu skewers, tamagoyaki, and matcha.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Tokyo Ramen Street (Tokyo Station)",
+                "address": "1 Chome Marunouchi, Chiyoda City, Tokyo",
+                "lat": 35.6812,
+                "lon": 139.7671,
+                "cost": 9.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Eight of Japan's most celebrated ramen masters under one roof serving rich Tonkotsu and Tsukemen.",
+                "photo_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700&q=80"
+            },
+            {
+                "name": "Omoide Yokocho (Memory Lane Yakitori)",
+                "address": "1-2 Nishishinjuku, Shinjuku City, Tokyo",
+                "lat": 35.6929,
+                "lon": 139.6997,
+                "cost": 15.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Atmospheric post-war alleyways lined with smoking charcoal yakitori grills and sake taverns.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            }
+        ],
+        "nature": [
+            {
+                "name": "Shinjuku Gyoen National Garden",
+                "address": "11 Naitomachi, Shinjuku City, Tokyo",
+                "lat": 35.6852,
+                "lon": 139.71,
+                "cost": 3.5,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "Sprawling 144-acre oasis blending traditional Japanese landscape, English landscape, and French formal gardens.",
+                "photo_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80"
+            },
+            {
+                "name": "Ueno Onshi Park & Shinobazu Pond",
+                "address": "Uenokoen, Taito City, Tokyo",
+                "lat": 35.714,
+                "lon": 139.7741,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.7,
+                "desc": "Centuries-old public park surrounded by lotus ponds, cherry blossom promenades, and shrines.",
+                "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
+            }
+        ],
+        "art": [
+            {
+                "name": "teamLab Planets TOKYO (Immersive Digital Art)",
+                "address": "6-1-16 Toyosu, Koto City, Tokyo",
+                "lat": 35.6518,
+                "lon": 139.7915,
+                "cost": 25.0,
+                "duration": 105,
+                "rating": 4.9,
+                "desc": "Mind-blowing barefoot digital art museum with infinity crystal rooms and interactive floating flower gardens.",
+                "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
+            },
+            {
+                "name": "Tokyo National Museum",
+                "address": "13-9 Uenokoen, Taito City, Tokyo",
+                "lat": 35.7189,
+                "lon": 139.7765,
+                "cost": 6.5,
+                "duration": 105,
+                "rating": 4.8,
+                "desc": "Japan's oldest museum housing national treasures, samurai armor, swords, and Buddhist sculpture.",
+                "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
+            }
+        ],
+        "culture": [
+            {
+                "name": "Asakusa Nakamise-dori Shopping Street",
+                "address": "1-36-3 Asakusa, Taito City, Tokyo",
+                "lat": 35.7125,
+                "lon": 139.796,
+                "cost": 5.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Traditional Edo-era market street selling handmade folding fans, yukata robes, and Ningyo-yaki sweets.",
+                "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
+            },
+            {
+                "name": "Yanaka Ginza Historic Shitamachi Quarter",
+                "address": "3-13-1 Yanaka, Taito City, Tokyo",
+                "lat": 35.7275,
+                "lon": 139.7675,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.7,
+                "desc": "Charming old Tokyo retro neighborhood that survived WWII with wooden craft shops and street snacks.",
+                "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
+            }
+        ],
+        "shopping": [
+            {
+                "name": "Akihabara Electric Town & Manga District",
+                "address": "Sotokanda, Chiyoda City, Tokyo",
+                "lat": 35.6983,
+                "lon": 139.7731,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Global mecca for electronics, anime figures, video games, maid cafes, and multi-story hobby towers.",
+                "photo_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=700&q=80"
+            },
+            {
+                "name": "Ginza Chuo-dori Luxury Shopping Boulevard",
+                "address": "Ginza, Chuo City, Tokyo",
+                "lat": 35.6718,
+                "lon": 139.765,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Tokyo's premier high-end fashion district with Ginza Six, luxury flagship stores, and department stores.",
+                "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Shibuya Sky 360 Observatory",
+                "address": "2-24-12 Shibuya, Shibuya City, Tokyo",
+                "lat": 35.658,
+                "lon": 139.7016,
+                "cost": 15.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "Open-air rooftop observatory 229 meters above Shibuya Crossing with panoramic Tokyo views and glass sky edge.",
+                "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
+            },
+            {
+                "name": "Tokyo Skytree Tembo Deck (634m Tower)",
+                "address": "1-1-2 Oshiage, Sumida City, Tokyo",
+                "lat": 35.71,
+                "lon": 139.8107,
+                "cost": 18.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "World's tallest freestanding broadcast tower offering breathtaking vistas stretching to Mount Fuji.",
+                "photo_url": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=700&q=80"
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "Shinjuku Golden Gai Micro-Bars",
+                "address": "1-1-6 Kabukicho, Shinjuku City, Tokyo",
+                "lat": 35.6942,
+                "lon": 139.7045,
+                "cost": 20.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Network of six narrow alleys housing over 200 eccentric micro-bars, jazz taverns, and music dens.",
+                "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
+            },
+            {
+                "name": "Shibuya Crossing & Nonbei Yokocho (Drunkard's Alley)",
+                "address": "1-25-10 Shibuya, Tokyo",
+                "lat": 35.6595,
+                "lon": 139.702,
+                "cost": 15.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Neon-lit crossing exploration followed by vintage Izakaya skewers under the train tracks.",
+                "photo_url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=700&q=80"
+            }
+        ]
+    },
+    "dubai": {
+        "history": [
+            {
+                "name": "Al Fahidi Historical Neighbourhood (Al Bastakiya)",
+                "address": "Al Fahidi Street, Bur Dubai, Dubai",
+                "lat": 25.2635,
+                "lon": 55.3003,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "19th-century heritage quarter featuring traditional gypsum wind towers, narrow sikkas, and art courtyards.",
+                "photo_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=80"
+            },
+            {
+                "name": "Dubai Museum & Al Fahidi Fort",
+                "address": "Al Fahidi, Bur Dubai, Dubai",
+                "lat": 25.263,
+                "lon": 55.2972,
+                "cost": 1.5,
+                "duration": 60,
+                "rating": 4.7,
+                "desc": "Oldest existing building in Dubai built in 1787 documenting bedouin life, pearl diving, and desert archaeology.",
+                "photo_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=80"
+            },
+            {
+                "name": "Al Seef Heritage & Dhow Waterfront",
+                "address": "Dubai Creek, Bur Dubai, Dubai",
+                "lat": 25.258,
+                "lon": 55.312,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Picturesque restoration district along Dubai Creek blending old-world coral architecture with modern promenades.",
+                "photo_url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80"
+            }
+        ],
+        "food": [
+            {
+                "name": "Arabian Tea House Restaurant & Cafe",
+                "address": "Al Fahidi Historical District, Bur Dubai, Dubai",
+                "lat": 25.264,
+                "lon": 55.301,
+                "cost": 18.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "Enchanting garden courtyard serving authentic Emirati breakfast trays, Machboos, grilled Halloumi, and Karak chai.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Bu Qtair Coastal Fish Restaurant",
+                "address": "Old 32B Street, Fishing Harbour 2, Umm Suqeim, Dubai",
+                "lat": 25.1435,
+                "lon": 55.195,
+                "cost": 15.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Legendary fresh catch seafood shack famous for spicy marinated fried Pomfret and jumbo prawns.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Time Out Market Dubai",
+                "address": "Souk Al Bahar, Downtown Dubai, Dubai",
+                "lat": 25.195,
+                "lon": 55.278,
+                "cost": 22.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Gourmet culinary hall featuring 17 top homegrown chefs overlooking Burj Khalifa fountains.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            }
+        ],
+        "nature": [
+            {
+                "name": "Dubai Miracle Garden",
+                "address": "Al Barsha South 3, Dubailand, Dubai",
+                "lat": 25.06,
+                "lon": 55.244,
+                "cost": 20.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "World's largest natural flower garden displaying 150 million blooming flowers in full-size Emirates A380 planes and castles.",
+                "photo_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+            },
+            {
+                "name": "Ras Al Khor Wildlife Sanctuary (Flamingo Haven)",
+                "address": "Ras Al Khor Road, Dubai",
+                "lat": 25.187,
+                "lon": 55.356,
+                "cost": 0.0,
+                "duration": 60,
+                "rating": 4.7,
+                "desc": "Wetland nature reserve hosting thousands of wild pink flamingos and migratory birds.",
+                "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
+            }
+        ],
+        "art": [
+            {
+                "name": "Museum of the Future",
+                "address": "Sheikh Zayed Road, Trade Centre, Dubai",
+                "lat": 25.2192,
+                "lon": 55.2818,
+                "cost": 40.0,
+                "duration": 105,
+                "rating": 4.9,
+                "desc": "Futuristic architectural marvel adorned with Arabic calligraphy exploring AI, bio-engineering, and space stations.",
+                "photo_url": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=700&q=80"
+            },
+            {
+                "name": "Alserkal Avenue Contemporary Arts District",
+                "address": "17th Street, Al Quoz 1, Dubai",
+                "lat": 25.142,
+                "lon": 55.228,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Industrial warehouse arts hub housing international galleries, indie film cinema, and artisan design studios.",
+                "photo_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80"
+            }
+        ],
+        "culture": [
+            {
+                "name": "Dubai Gold Souk & Spice Souk",
+                "address": "Al Ras, Deira, Dubai",
+                "lat": 25.2685,
+                "lon": 55.2975,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "World's most famous gold and saffron bazaar with traditional abra water taxi rides across Dubai Creek.",
+                "photo_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=700&q=80"
+            },
+            {
+                "name": "Jumeirah Mosque Cultural Tour",
+                "address": "Jumeirah Beach Road, Jumeirah 1, Dubai",
+                "lat": 25.2335,
+                "lon": 55.2655,
+                "cost": 7.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Iconic white stone Fatimid mosque offering guided cultural exchanges and Emirati dates with Arabic coffee.",
+                "photo_url": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&q=80"
+            }
+        ],
+        "shopping": [
+            {
+                "name": "The Dubai Mall & Dubai Aquarium",
+                "address": "Financial Center Road, Downtown Dubai, Dubai",
+                "lat": 25.1972,
+                "lon": 55.2744,
+                "cost": 0.0,
+                "duration": 120,
+                "rating": 4.9,
+                "desc": "World's largest shopping destination with 1,200 stores, indoor Olympic ice rink, giant aquarium, and waterfall.",
+                "photo_url": "https://images.unsplash.com/photo-1532664189809-02133fee698d?w=700&q=80"
+            },
+            {
+                "name": "Mall of the Emirates & Ski Dubai",
+                "address": "Sheikh Zayed Road, Al Barsha 1, Dubai",
+                "lat": 25.118,
+                "lon": 55.2005,
+                "cost": 0.0,
+                "duration": 105,
+                "rating": 4.8,
+                "desc": "Luxury shopping resort featuring an indoor snow ski slope and luxury fashion dome.",
+                "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Burj Khalifa 'At The Top' Skydeck (Level 124/125/148)",
+                "address": "1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, Dubai",
+                "lat": 25.1972,
+                "lon": 55.2744,
+                "cost": 45.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "Ascend the world's tallest building (828m) for breathtaking 360-degree aerial views over the Arabian Gulf.",
+                "photo_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=700&q=80"
+            },
+            {
+                "name": "Dubai Desert Safari & 4x4 Dune Bashing",
+                "address": "Lahbab Red Dunes Desert, Dubai",
+                "lat": 24.96,
+                "lon": 55.61,
+                "cost": 35.0,
+                "duration": 180,
+                "rating": 4.9,
+                "desc": "High-octane red dune bashing, sandboarding, camel rides, and bedouin barbecue sunset dinner.",
+                "photo_url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=700&q=80"
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "The Dubai Fountain Night Show & Burj Lake Promenade",
+                "address": "Downtown Dubai, Dubai",
+                "lat": 25.195,
+                "lon": 55.276,
+                "cost": 0.0,
+                "duration": 60,
+                "rating": 4.9,
+                "desc": "World's tallest choreographed fountain dancing to Arabic and world hits illuminated by 6,600 lights.",
+                "photo_url": "https://images.unsplash.com/photo-1594545032932-c0af37524660?w=700&q=80"
+            },
+            {
+                "name": "C\u00c9 LA VI Rooftop Sky Bar & Lounge",
+                "address": "Address Sky View, Downtown Dubai, Dubai",
+                "lat": 25.201,
+                "lon": 55.271,
+                "cost": 25.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Infinity pool sky bar overlooking Burj Khalifa skyline with signature cocktails and live DJ sets.",
+                "photo_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80"
+            }
+        ]
+    },
+    "islamabad": {
+        "history": [
+            {
+                "place_id": "islamabad-history-1",
+                "name": "Pakistan Monument",
+                "category": "history",
+                "rating": 4.8,
+                "price_tier": 1,
+                "lat": 33.6933,
+                "lon": 73.0683,
+                "address": "Shakarparian Hills, Islamabad",
+                "opening_hours": {
+                    "open": "08:00",
+                    "close": "20:00"
+                },
+                "visit_duration_min": 60,
+                "description": "A national monument representing the nation's four provinces.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 2.0
+            },
+            {
+                "place_id": "islamabad-history-2",
+                "name": "Faisal Mosque",
+                "category": "history",
+                "rating": 4.9,
+                "price_tier": 1,
+                "lat": 33.7297,
+                "lon": 73.0372,
+                "address": "Shah Faisal Ave, Islamabad",
+                "opening_hours": {
+                    "open": "05:00",
+                    "close": "22:00"
+                },
+                "visit_duration_min": 60,
+                "description": "The largest mosque in Pakistan, known for its contemporary design.",
+                "photo_url": "https://images.unsplash.com/photo-1627885002016-52bbcf76b509?w=700&q=80",
+                "est_cost": 0.0
+            },
+            {
+                "place_id": "islamabad-history-3",
+                "name": "Lok Virsa Museum",
+                "category": "history",
+                "rating": 4.6,
+                "price_tier": 1,
+                "lat": 33.6896,
+                "lon": 73.0722,
+                "address": "Shakarparian Road, Islamabad",
+                "opening_hours": {
+                    "open": "10:00",
+                    "close": "18:00"
+                },
+                "visit_duration_min": 90,
+                "description": "A museum showcasing the cultural heritage of Pakistan.",
+                "photo_url": "https://images.unsplash.com/photo-1590409748604-51b6985a97de?w=700&q=80",
+                "est_cost": 3.0
+            }
+        ],
+        "nature": [
+            {
+                "place_id": "islamabad-nature-1",
+                "name": "Daman-e-Koh",
+                "category": "nature",
+                "rating": 4.7,
+                "price_tier": 1,
+                "lat": 33.7389,
+                "lon": 73.0566,
+                "address": "Margalla Hills, Islamabad",
+                "opening_hours": {
+                    "open": "06:00",
+                    "close": "23:00"
+                },
+                "visit_duration_min": 120,
+                "description": "A viewing point and hill garden offering panoramic views of the city.",
+                "photo_url": "https://images.unsplash.com/photo-1627885002016-52bbcf76b509?w=700&q=80",
+                "est_cost": 0.0
+            },
+            {
+                "place_id": "islamabad-nature-2",
+                "name": "Rawal Lake",
+                "category": "nature",
+                "rating": 4.5,
+                "price_tier": 2,
+                "lat": 33.7081,
+                "lon": 73.1251,
+                "address": "Lake View Park, Islamabad",
+                "opening_hours": {
+                    "open": "08:00",
+                    "close": "22:00"
+                },
+                "visit_duration_min": 180,
+                "description": "An artificial reservoir providing water to the twin cities.",
+                "photo_url": "https://images.unsplash.com/photo-1590409748604-51b6985a97de?w=700&q=80",
+                "est_cost": 5.0
+            }
+        ],
+        "food": [
+            {
+                "place_id": "islamabad-food-1",
+                "name": "Monal Restaurant",
+                "category": "food",
+                "rating": 4.6,
+                "price_tier": 3,
+                "lat": 33.7483,
+                "lon": 73.0483,
+                "address": "Pir Sohawa Road, Islamabad",
+                "opening_hours": {
+                    "open": "12:00",
+                    "close": "00:00"
+                },
+                "visit_duration_min": 120,
+                "description": "Famous hill-top restaurant with spectacular city views.",
+                "photo_url": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=700&q=80",
+                "est_cost": 25.0
+            },
+            {
+                "place_id": "islamabad-food-2",
+                "name": "Savour Foods",
+                "category": "food",
+                "rating": 4.5,
+                "price_tier": 1,
+                "lat": 33.7161,
+                "lon": 73.0645,
+                "address": "Blue Area, Islamabad",
+                "opening_hours": {
+                    "open": "11:00",
+                    "close": "23:00"
+                },
+                "visit_duration_min": 45,
+                "description": "Iconic local chain famous for its pulao kabab.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 4.0
+            }
+        ],
+        "shopping": [
+            {
+                "place_id": "islamabad-shopping-1",
+                "name": "Centaurus Mall",
+                "category": "shopping",
+                "rating": 4.6,
+                "price_tier": 3,
+                "lat": 33.7118,
+                "lon": 73.0531,
+                "address": "Jinnah Avenue, Islamabad",
+                "opening_hours": {
+                    "open": "10:00",
+                    "close": "22:00"
+                },
+                "visit_duration_min": 180,
+                "description": "The largest and most iconic shopping mall in the capital.",
+                "photo_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80",
+                "est_cost": 50.0
+            }
+        ]
+    },
+    "karachi": {
+        "history": [
+            {
+                "place_id": "karachi-history-1",
+                "name": "Mazar-e-Quaid",
+                "category": "history",
+                "rating": 4.7,
+                "price_tier": 1,
+                "lat": 24.8741,
+                "lon": 67.0401,
+                "address": "M.A Jinnah Road, Karachi",
+                "opening_hours": {
+                    "open": "10:00",
+                    "close": "17:00"
+                },
+                "visit_duration_min": 60,
+                "description": "The final resting place of the founder of Pakistan.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 0.0
+            },
+            {
+                "place_id": "karachi-history-2",
+                "name": "Mohatta Palace",
+                "category": "history",
+                "rating": 4.8,
+                "price_tier": 1,
+                "lat": 24.8142,
+                "lon": 67.0298,
+                "address": "Clifton, Karachi",
+                "opening_hours": {
+                    "open": "11:00",
+                    "close": "18:00"
+                },
+                "visit_duration_min": 90,
+                "description": "An exquisite palace acting as an art museum.",
+                "photo_url": "https://images.unsplash.com/photo-1590409748604-51b6985a97de?w=700&q=80",
+                "est_cost": 4.0
+            }
+        ],
+        "food": [
+            {
+                "place_id": "karachi-food-1",
+                "name": "Do Darya",
+                "category": "food",
+                "rating": 4.8,
+                "price_tier": 3,
+                "lat": 24.7738,
+                "lon": 67.0673,
+                "address": "Sea View Road, Karachi",
+                "opening_hours": {
+                    "open": "18:00",
+                    "close": "02:00"
+                },
+                "visit_duration_min": 120,
+                "description": "A breathtaking dining strip right over the Arabian Sea.",
+                "photo_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80",
+                "est_cost": 30.0
+            },
+            {
+                "place_id": "karachi-food-2",
+                "name": "Burns Road",
+                "category": "food",
+                "rating": 4.7,
+                "price_tier": 1,
+                "lat": 24.8569,
+                "lon": 67.0135,
+                "address": "Burns Road, Saddar, Karachi",
+                "opening_hours": {
+                    "open": "17:00",
+                    "close": "03:00"
+                },
+                "visit_duration_min": 90,
+                "description": "The ultimate street food destination of Karachi.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 10.0
+            }
+        ],
+        "nature": [
+            {
+                "place_id": "karachi-nature-1",
+                "name": "Clifton Beach",
+                "category": "nature",
+                "rating": 4.2,
+                "price_tier": 1,
+                "lat": 24.808,
+                "lon": 67.021,
+                "address": "Sea View, Karachi",
+                "opening_hours": {
+                    "open": "00:00",
+                    "close": "23:59"
+                },
+                "visit_duration_min": 120,
+                "description": "The most famous beach in Karachi offering horse and camel rides.",
+                "photo_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=80",
+                "est_cost": 2.0
+            }
+        ]
+    },
+    "skardu": {
+        "nature": [
+            {
+                "place_id": "skardu-nature-1",
+                "name": "Shangrila Resort",
+                "category": "nature",
+                "rating": 4.8,
+                "price_tier": 3,
+                "lat": 35.3441,
+                "lon": 75.4658,
+                "address": "Kachura Lake, Skardu",
+                "opening_hours": {
+                    "open": "00:00",
+                    "close": "23:59"
+                },
+                "visit_duration_min": 240,
+                "description": "Heaven on earth, famous for its heart-shaped lower Kachura lake.",
+                "photo_url": "https://images.unsplash.com/photo-1627885002016-52bbcf76b509?w=700&q=80",
+                "est_cost": 15.0
+            },
+            {
+                "place_id": "skardu-nature-2",
+                "name": "Deosai National Park",
+                "category": "nature",
+                "rating": 4.9,
+                "price_tier": 2,
+                "lat": 35.0312,
+                "lon": 75.5681,
+                "address": "Deosai Plains, Skardu",
+                "opening_hours": {
+                    "open": "06:00",
+                    "close": "18:00"
+                },
+                "visit_duration_min": 360,
+                "description": "The second highest alpine plateau in the world, home to brown bears.",
+                "photo_url": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=700&q=80",
+                "est_cost": 20.0
+            },
+            {
+                "place_id": "skardu-nature-3",
+                "name": "Upper Kachura Lake",
+                "category": "nature",
+                "rating": 4.8,
+                "price_tier": 1,
+                "lat": 35.3375,
+                "lon": 75.4571,
+                "address": "Upper Kachura, Skardu",
+                "opening_hours": {
+                    "open": "07:00",
+                    "close": "19:00"
+                },
+                "visit_duration_min": 120,
+                "description": "A serene lake with crystal clear water surrounded by wild apricot orchards.",
+                "photo_url": "https://images.unsplash.com/photo-1590409748604-51b6985a97de?w=700&q=80",
+                "est_cost": 5.0
+            }
+        ],
+        "history": [
+            {
+                "place_id": "skardu-history-1",
+                "name": "Kharpocho Fort",
+                "category": "history",
+                "rating": 4.6,
+                "price_tier": 1,
+                "lat": 35.3023,
+                "lon": 75.6329,
+                "address": "Skardu City",
+                "opening_hours": {
+                    "open": "08:00",
+                    "close": "18:00"
+                },
+                "visit_duration_min": 120,
+                "description": "An ancient fort perched above the town, offering panoramic views of the Indus River.",
+                "photo_url": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=700&q=80",
+                "est_cost": 2.0
+            }
+        ]
+    },
+    "paris": {
+        "history": [
+            {
+                "name": "Eiffel Tower (Tour Eiffel)",
+                "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
+                "lat": 48.8584,
+                "lon": 2.2945,
+                "cost": 28.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "World's most iconic 1889 wrought-iron tower offering sensational summit views of Paris.",
+                "photo_url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=700&q=80"
+            },
+            {
+                "name": "Notre-Dame Cathedral & \u00cele de la Cit\u00e9",
+                "address": "6 Parvis Notre-Dame, 75004 Paris",
+                "lat": 48.853,
+                "lon": 2.3499,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Masterpiece of French Gothic architecture with gargoyles, rose windows, and royal history on the Seine.",
+                "photo_url": "https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=700&q=80"
+            },
+            {
+                "name": "Arc de Triomphe & Champs-\u00c9lys\u00e9es",
+                "address": "Pl. Charles de Gaulle, 75008 Paris",
+                "lat": 48.8738,
+                "lon": 2.295,
+                "cost": 16.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Napoleonic triumphal arch honoring French soldiers with a rooftop view overlooking 12 radiating grand avenues.",
+                "photo_url": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=700&q=80"
+            }
+        ],
+        "art": [
+            {
+                "name": "Louvre Museum (Mona Lisa & Venus de Milo)",
+                "address": "Rue de Rivoli, 75001 Paris",
+                "lat": 48.8606,
+                "lon": 2.3376,
+                "cost": 22.0,
+                "duration": 180,
+                "rating": 4.9,
+                "desc": "World's largest art museum holding 380,000 historic objects, Leonardo da Vinci's Mona Lisa, and the Glass Pyramid.",
+                "photo_url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80"
+            },
+            {
+                "name": "Mus\u00e9e d'Orsay",
+                "address": "1 Rue de la L\u00e9gion d'Honneur, 75007 Paris",
+                "lat": 48.8599,
+                "lon": 2.3266,
+                "cost": 16.0,
+                "duration": 120,
+                "rating": 4.9,
+                "desc": "Converted Beaux-Arts railway station holding the world's finest Impressionist masterpieces by Monet, Van Gogh, and Renoir.",
+                "photo_url": "https://images.unsplash.com/photo-1567942712661-0f0f8d89b7b8?w=700&q=80"
+            }
+        ],
+        "food": [
+            {
+                "name": "Le Comptoir du Relais Bistro",
+                "address": "9 Carrefour de l'Od\u00e9on, 75006 Paris",
+                "lat": 48.852,
+                "lon": 2.338,
+                "cost": 35.0,
+                "duration": 75,
+                "rating": 4.8,
+                "desc": "Classic Parisian bistro serving Duck Confit, Escargots de Bourgogne, fresh Baguettes, and Creme Brulee.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            },
+            {
+                "name": "Rue Cler Market Street Food Walk",
+                "address": "Rue Cler, 75007 Paris",
+                "lat": 48.8565,
+                "lon": 2.3055,
+                "cost": 15.0,
+                "duration": 60,
+                "rating": 4.8,
+                "desc": "Quintessential foodie street filled with artisanal fromageries, warm croissants, macaron stalls, and creperies.",
+                "photo_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+            }
+        ],
+        "nature": [
+            {
+                "name": "Jardin du Luxembourg (Luxembourg Gardens)",
+                "address": "75006 Paris",
+                "lat": 48.8462,
+                "lon": 2.3372,
+                "cost": 0.0,
+                "duration": 75,
+                "rating": 4.9,
+                "desc": "61-acre royal garden palace with tree-lined promenades, the Medici Fountain, and model sailboat ponds.",
+                "photo_url": "https://images.unsplash.com/photo-1443890923422-7819ed4101c0?w=700&q=80"
+            }
+        ],
+        "culture": [
+            {
+                "name": "Montmartre & Sacr\u00e9-C\u0153ur Basilica",
+                "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
+                "lat": 48.8867,
+                "lon": 2.3431,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.9,
+                "desc": "Bohemian hilltop village of artists at Place du Tertre leading to the white-domed Sacr\u00e9-C\u0153ur Basilica.",
+                "photo_url": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?w=700&q=80"
+            }
+        ],
+        "shopping": [
+            {
+                "name": "Galeries Lafayette Haussmann (Glass Dome)",
+                "address": "40 Bd Haussmann, 75009 Paris",
+                "lat": 48.8732,
+                "lon": 2.332,
+                "cost": 0.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Legendary Art Nouveau luxury department store crowned with a stained-glass coupola and free rooftop terrace.",
+                "photo_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80"
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Seine River Sunset Bateaux Mouches Cruise",
+                "address": "Pont de l'Alma, 75008 Paris",
+                "lat": 48.8635,
+                "lon": 2.3015,
+                "cost": 18.0,
+                "duration": 70,
+                "rating": 4.8,
+                "desc": "Open-air scenic river cruise gliding under illuminated Parisian bridges past the Louvre and Eiffel Tower.",
+                "photo_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80"
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "Le Marais Night Lounges & Cocktail Bars",
+                "address": "Rue des Rosiers, 75004 Paris",
+                "lat": 48.8575,
+                "lon": 2.359,
+                "cost": 22.0,
+                "duration": 90,
+                "rating": 4.8,
+                "desc": "Vibrant historic quartier buzzing with rooftop speakeasies, wine caves, and late-night jazz.",
+                "photo_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=80"
+            }
+        ]
+    },
+    "new york": {
+        "history": [
+            {
+                "name": "Statue of Liberty",
+                "desc": "Iconic copper statue and national monument.",
+                "address": "Liberty Island",
+                "cost": 25,
+                "duration": 180,
+                "rating": 4.9,
+                "lat": 40.6892,
+                "lon": -74.0445
+            },
+            {
+                "name": "9/11 Memorial & Museum",
+                "desc": "Memorial and museum honoring the victims.",
+                "address": "180 Greenwich St",
+                "cost": 33,
+                "duration": 120,
+                "rating": 4.8,
+                "lat": 40.7115,
+                "lon": -74.0132
+            },
+            {
+                "name": "Empire State Building",
+                "desc": "Historical Art Deco skyscraper with observatory.",
+                "address": "350 5th Ave",
+                "cost": 44,
+                "duration": 90,
+                "rating": 4.7,
+                "lat": 40.7484,
+                "lon": -73.9857
+            }
+        ],
+        "nature": [
+            {
+                "name": "Central Park",
+                "desc": "Vast urban park in the middle of Manhattan.",
+                "address": "Manhattan",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.9,
+                "lat": 40.7812,
+                "lon": -73.9665
+            },
+            {
+                "name": "The High Line",
+                "desc": "Elevated linear park on a former railway.",
+                "address": "Chelsea",
+                "cost": 0,
+                "duration": 90,
+                "rating": 4.8,
+                "lat": 40.7479,
+                "lon": -74.0048
+            },
+            {
+                "name": "Brooklyn Botanic Garden",
+                "desc": "Beautiful 52-acre botanical garden.",
+                "address": "990 Washington Ave",
+                "cost": 18,
+                "duration": 120,
+                "rating": 4.8,
+                "lat": 40.6662,
+                "lon": -73.9626
+            }
+        ],
+        "culture": [
+            {
+                "name": "Metropolitan Museum of Art",
+                "desc": "One of the world's largest art museums.",
+                "address": "1000 5th Ave",
+                "cost": 30,
+                "duration": 180,
+                "rating": 4.9,
+                "lat": 40.7794,
+                "lon": -73.9632
+            },
+            {
+                "name": "Broadway Theatre District",
+                "desc": "The heart of commercial theatrical performances.",
+                "address": "Midtown Manhattan",
+                "cost": 100,
+                "duration": 180,
+                "rating": 4.8,
+                "lat": 40.759,
+                "lon": -73.9845
+            },
+            {
+                "name": "Museum of Modern Art (MoMA)",
+                "desc": "World-class collection of modern art.",
+                "address": "11 W 53rd St",
+                "cost": 28,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 40.7614,
+                "lon": -73.9776
+            }
+        ],
+        "food": [
+            {
+                "name": "Chelsea Market",
+                "desc": "Food hall, shopping mall, and television production facility.",
+                "address": "75 9th Ave",
+                "cost": 25,
+                "duration": 60,
+                "rating": 4.8,
+                "lat": 40.742,
+                "lon": -74.0048
+            },
+            {
+                "name": "Katz's Delicatessen",
+                "desc": "Iconic kosher-style deli known for pastrami.",
+                "address": "205 E Houston St",
+                "cost": 35,
+                "duration": 60,
+                "rating": 4.7,
+                "lat": 40.7222,
+                "lon": -73.9874
+            },
+            {
+                "name": "Joe's Pizza",
+                "desc": "Famous classic New York slice pizza.",
+                "address": "7 Carmine St",
+                "cost": 5,
+                "duration": 30,
+                "rating": 4.8,
+                "lat": 40.7306,
+                "lon": -74.0021
+            }
+        ],
+        "art": [
+            {
+                "name": "Guggenheim Museum",
+                "desc": "Modern and contemporary art in an iconic building.",
+                "address": "1071 5th Ave",
+                "cost": 25,
+                "duration": 120,
+                "rating": 4.6,
+                "lat": 40.783,
+                "lon": -73.959
+            },
+            {
+                "name": "Whitney Museum of American Art",
+                "desc": "Focuses on 20th- and 21st-century American art.",
+                "address": "99 Gansevoort St",
+                "cost": 25,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 40.7396,
+                "lon": -74.0089
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "Times Square at Night",
+                "desc": "Bustling, neon-lit commercial intersection and tourist hub.",
+                "address": "Midtown Manhattan",
+                "cost": 0,
+                "duration": 90,
+                "rating": 4.7,
+                "lat": 40.758,
+                "lon": -73.9855
+            },
+            {
+                "name": "Greenwich Village Jazz Clubs",
+                "desc": "Historic neighborhood known for its vibrant jazz scene.",
+                "address": "Greenwich Village",
+                "cost": 20,
+                "duration": 120,
+                "rating": 4.8,
+                "lat": 40.7336,
+                "lon": -74.0027
+            }
+        ],
+        "shopping": [
+            {
+                "name": "Fifth Avenue",
+                "desc": "Famous shopping street with luxury boutiques.",
+                "address": "5th Ave",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.8,
+                "lat": 40.7744,
+                "lon": -73.9656
+            },
+            {
+                "name": "SoHo Shopping District",
+                "desc": "Trendy neighborhood with designer boutiques and galleries.",
+                "address": "SoHo",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 40.7233,
+                "lon": -74.003
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Statue of Liberty Crown Tour",
+                "desc": "Climb up to the crown of the Statue of Liberty.",
+                "address": "Liberty Island",
+                "cost": 25,
+                "duration": 180,
+                "rating": 4.9,
+                "lat": 40.6892,
+                "lon": -74.0445
+            }
+        ]
+    },
+    "beijing": {
+        "history": [
+            {
+                "name": "Forbidden City",
+                "desc": "Vast imperial palace complex from the Ming dynasty.",
+                "address": "Dongcheng",
+                "cost": 9,
+                "duration": 240,
+                "rating": 4.9,
+                "lat": 39.9163,
+                "lon": 116.3972
+            },
+            {
+                "name": "Temple of Heaven",
+                "desc": "Imperial religious complex visited by emperors.",
+                "address": "Dongcheng",
+                "cost": 5,
+                "duration": 120,
+                "rating": 4.8,
+                "lat": 39.8822,
+                "lon": 116.4066
+            },
+            {
+                "name": "Summer Palace",
+                "desc": "Vast ensemble of lakes, gardens and palaces.",
+                "address": "Haidian District",
+                "cost": 8,
+                "duration": 180,
+                "rating": 4.8,
+                "lat": 39.9997,
+                "lon": 116.2677
+            }
+        ],
+        "nature": [
+            {
+                "name": "Jingshan Park",
+                "desc": "Imperial park offering panoramic views of the Forbidden City.",
+                "address": "Jingshan Front St",
+                "cost": 1,
+                "duration": 60,
+                "rating": 4.7,
+                "lat": 39.9255,
+                "lon": 116.3969
+            },
+            {
+                "name": "Beihai Park",
+                "desc": "One of the oldest imperial gardens in China.",
+                "address": "Xicheng",
+                "cost": 3,
+                "duration": 120,
+                "rating": 4.6,
+                "lat": 39.9284,
+                "lon": 116.3831
+            },
+            {
+                "name": "Olympic Forest Park",
+                "desc": "Expansive park built for the 2008 Olympics.",
+                "address": "Chaoyang",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 40.0163,
+                "lon": 116.392
+            }
+        ],
+        "culture": [
+            {
+                "name": "National Museum of China",
+                "desc": "Massive museum showcasing Chinese history and art.",
+                "address": "Tiananmen Square",
+                "cost": 0,
+                "duration": 180,
+                "rating": 4.8,
+                "lat": 39.9038,
+                "lon": 116.3976
+            },
+            {
+                "name": "798 Art Zone",
+                "desc": "Thriving contemporary art district in decommissioned factories.",
+                "address": "Chaoyang",
+                "cost": 0,
+                "duration": 150,
+                "rating": 4.8,
+                "lat": 39.9833,
+                "lon": 116.4883
+            },
+            {
+                "name": "Lama Temple (Yonghe Temple)",
+                "desc": "Renowned Tibetan Buddhist temple.",
+                "address": "Dongcheng",
+                "cost": 4,
+                "duration": 90,
+                "rating": 4.7,
+                "lat": 39.9472,
+                "lon": 116.4172
+            }
+        ],
+        "food": [
+            {
+                "name": "Quanjude Roast Duck",
+                "desc": "Famous restaurant known for its Peking duck.",
+                "address": "Dongcheng",
+                "cost": 40,
+                "duration": 90,
+                "rating": 4.7,
+                "lat": 39.9141,
+                "lon": 116.4116
+            },
+            {
+                "name": "Wangfujing Snack Street",
+                "desc": "Bustling street with exotic local street food.",
+                "address": "Wangfujing",
+                "cost": 15,
+                "duration": 60,
+                "rating": 4.5,
+                "lat": 39.9126,
+                "lon": 116.4111
+            },
+            {
+                "name": "Nanluoguxiang",
+                "desc": "Ancient alleyway packed with trendy cafes and snacks.",
+                "address": "Dongcheng",
+                "cost": 20,
+                "duration": 90,
+                "rating": 4.7,
+                "lat": 39.9366,
+                "lon": 116.4029
+            }
+        ],
+        "art": [
+            {
+                "name": "National Centre for the Performing Arts",
+                "desc": "Iconic egg-shaped arts center.",
+                "address": "Xicheng",
+                "cost": 5,
+                "duration": 90,
+                "rating": 4.8,
+                "lat": 39.9031,
+                "lon": 116.3897
+            }
+        ],
+        "nightlife": [
+            {
+                "name": "Sanlitun Bar Street",
+                "desc": "Famous destination for nightlife and international dining.",
+                "address": "Chaoyang",
+                "cost": 30,
+                "duration": 120,
+                "rating": 4.6,
+                "lat": 39.9348,
+                "lon": 116.4552
+            },
+            {
+                "name": "Houhai Bar Street",
+                "desc": "Bars and cafes surrounding the beautiful Houhai lake.",
+                "address": "Xicheng",
+                "cost": 25,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 39.9382,
+                "lon": 116.3831
+            }
+        ],
+        "shopping": [
+            {
+                "name": "Wangfujing Pedestrian Street",
+                "desc": "One of the most famous shopping streets in Beijing.",
+                "address": "Dongcheng",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.7,
+                "lat": 39.912,
+                "lon": 116.4111
+            },
+            {
+                "name": "Silk Market (Xiushui)",
+                "desc": "Popular indoor market known for knockoffs and silk.",
+                "address": "Chaoyang",
+                "cost": 0,
+                "duration": 120,
+                "rating": 4.4,
+                "lat": 39.9096,
+                "lon": 116.4468
+            }
+        ],
+        "adventure": [
+            {
+                "name": "Mutianyu Great Wall Hike",
+                "desc": "Less crowded, scenic section of the Great Wall.",
+                "address": "Huairou District",
+                "cost": 15,
+                "duration": 240,
+                "rating": 4.9,
+                "lat": 40.4319,
+                "lon": 116.5704
+            }
+        ]
+    }
 }

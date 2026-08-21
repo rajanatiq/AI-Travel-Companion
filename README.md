@@ -5,7 +5,9 @@ This is the backend service for Wanderlust AI, built with FastAPI, SQLAlchemy, a
 ## ? Features
 - **FastAPI Framework:** High-performance async API.
 - **AI Integration:** Uses Gemini 1.5 Flash to generate verified travel spots concurrently.
-- **Robust API-Free Fallback System:** Integrates live Wikipedia Search API and dynamic realistic place generation to ensure a 100% success rate globally for trip generation, even if the primary AI API is rate-limited or fails.
+- **Strict Entity Verification:** Ensures generated itinerary items are real, physical places. Filters out non-place entities (like sports leagues, events) using a custom taxonomy and hard validation against Wikipedia GeoSearch and Google Places APIs.
+- **Dynamic City-Specific Fallbacks:** If the AI API fails or is rate-limited, the system falls back to mining Wikipedia's GeoSearch coordinate data to find real tourist attractions, parks, and museums near the destination city.
+- **Smart Image Resolving:** Fetches realistic cover photos for trips based on the actual city location (falling back gracefully from Google Places Photos -> Wikipedia Page Images -> Unsplash).
 - **SQL Server Database:** Microsoft SQL Server with pyodbc for robust relational data storage.
 - **JWT Auth:** Secure user registration and login.
 - **Trip & Budget Management:** CRUD endpoints for trips, itinerary items, and expenses.

@@ -384,208 +384,48 @@ class PlacesService:
     ) -> List[Dict[str, Any]]:
         """
         Generates 100% REAL, EXACT, GEOLOCATED places matching user's selected vibes/interests.
-        Uses verified real places catalog + Wikipedia Geosearch live fallback.
+        Uses VerifiedPlaceCache, Wikipedia Geosearch, and AI verification.
         """
+        from app.services.verification_service import VerificationService
+        from app.services.ai_places_service import AIPlacesService
+
         city_info = cls.get_city_details(destination)
         city_name = city_info["city"]
         city_key = city_name.lower().strip()
+        
         interests = interests or ["history", "food", "culture", "nature", "art"]
         categories = list(set([i.lower() for i in interests] + ["food", "history", "culture", "nature"]))
 
-        candidates = []
         base_lat = city_info["lat"]
         base_lon = city_info["lon"]
 
-        # Check if city is in our rich real catalog
-        catalog_city = None
-        for k, v in REAL_PLACES_CATALOG.items():
-            if k in city_key or city_key in k:
-                catalog_city = v
-                break
-
-        if catalog_city:
-            # Pull 100% real verified places matching selected categories
-            for cat in categories:
-                cat_spots = catalog_city.get(cat, [])
-                for i, spot in enumerate(cat_spots):
-                    place_id = f"real-{city_key}-{cat}-{i+1}"
-                    poi_data = {
-                        "place_id": place_id,
-                        "name": spot["name"],
-                        "category": cat,
-                        "rating": spot.get("rating", 4.8),
-                        "price_tier": 2 if spot.get("cost", 0) > 10 else 1,
-                        "lat": spot.get("lat", base_lat),
-                        "lon": spot.get("lon", base_lon),
-                        "address": spot.get("address", f"{city_name}, {city_info['country']}"),
-                        "opening_hours": {"open": "09:00", "close": "21:00"},
-                        "visit_duration_min": spot.get("duration", 90),
-                        "description": f"{spot.get('desc', '')} (Location: {spot.get('address', city_name)})",
-                        "photo_url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80",
-                        "est_cost": spot.get("cost", 10.0)
-                    }
-                    candidates.append(poi_data)
-
-            # Also add other categories to fill up candidate pool
-            for cat, cat_spots in catalog_city.items():
-                if cat not in categories:
-                    for i, spot in enumerate(cat_spots):
-                        place_id = f"real-{city_key}-{cat}-{i+1}"
-                        if not any(c["place_id"] == place_id for c in candidates):
-                            poi_data = {
-                                "place_id": place_id,
-                                "name": spot["name"],
-                                "category": cat,
-                                "rating": spot.get("rating", 4.8),
-                                "price_tier": 2 if spot.get("cost", 0) > 10 else 1,
-                                "lat": spot.get("lat", base_lat),
-                                "lon": spot.get("lon", base_lon),
-                                "address": spot.get("address", f"{city_name}, {city_info['country']}"),
-                                "opening_hours": {"open": "09:00", "close": "21:00"},
-                                "visit_duration_min": spot.get("duration", 90),
-                                "description": f"{spot.get('desc', '')} (Location: {spot.get('address', city_name)})",
-                                "photo_url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80",
-                                "est_cost": spot.get("cost", 10.0)
-                            }
-                            candidates.append(poi_data)
-
-        # If not in catalog or needs more places, fetch REAL Wikipedia geosearch places
-        if True:
-            try:
-                from app.services.ai_places_service import AIPlacesService
-                
-                # Fetch ALL categories in a SINGLE request to make it extremely fast!
-                batch_res = await AIPlacesService.fetch_spots_batch(city_name, categories)
-                results_dict = batch_res.get("results", {})
-                
-                if not results_dict or batch_res.get("error"):
-                    # FALLBACK MOCKS WITH WIKIPEDIA TEXT SEARCH
-                    import urllib.request
-                    import urllib.parse
-                    import json
-                    import ssl
-                    import random
+        # Fetch candidate spots from Gemini (AI)
+        batch_res = await AIPlacesService.fetch_spots_batch(city_name, categories)
+        results_dict = batch_res.get("results", {})
+        
+        gemini_suggestions = []
+        for cat, places in results_dict.items():
+            if isinstance(places, list):
+                for p in places:
+                    p["category"] = cat.lower()
+                    gemini_suggestions.append(p)
                     
-                    wiki_places = []
-                    try:
-                        ctx = ssl.create_default_context()
-                        ctx.check_hostname = False
-                        ctx.verify_mode = ssl.CERT_NONE
-                        
-                        query_str = urllib.parse.quote(f'intitle:"{city_name}" (park OR museum OR landmark OR tourism OR historic)')
-                        url = f"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={query_str}&utf8=&format=json&srlimit=30"
-                        req = urllib.request.Request(url, headers={'User-Agent': 'AI-Travel-App/1.0'})
-                        with urllib.request.urlopen(req, context=ctx, timeout=5) as response:
-                            wiki_data = json.loads(response.read().decode())
-                            raw_titles = [item['title'] for item in wiki_data.get('query', {}).get('search', [])]
-                            # Filter out very generic administrative articles
-                            wiki_places = [t for t in raw_titles if "National Register" not in t and "County" not in t and t != city_name]
-                    except Exception as e:
-                        logger.error(f"Wiki fallback failed: {e}")
-                        
-                    if not wiki_places:
-                        # SUPER REALISTIC MOCKS IF WIKIPEDIA FAILS
-                        realistic_keywords = {
-                            "history": ["National Museum", "Heritage Center", "Old Town Square", "Historic Fort", "Royal Palace", "Ancient Ruins", "City Monument"],
-                            "nature": ["Botanical Gardens", "National Park", "City Lake", "Scenic Viewpoint", "Riverside Walk", "Mountain Trail", "Nature Reserve"],
-                            "culture": ["Art Gallery", "Cultural Center", "Grand Theater", "Opera House", "Local Bazaar", "Folk Museum", "Performing Arts Center"],
-                            "food": ["Central Market", "Street Food Alley", "Culinary District", "Traditional Bistro", "Grand Cafe", "Spice Market", "Riverfront Dining"],
-                            "shopping": ["Grand Mall", "Fashion District", "Antique Market", "Crafts Bazaar", "Shopping Arcade", "Boutique Street"],
-                            "adventure": ["Adventure Park", "Hiking Trail", "Outdoor Activities Center", "Sports Complex", "Desert Safari Camp", "Water Sports Club"],
-                            "nightlife": ["Bar District", "Night Market", "Jazz Club", "Rooftop Lounge", "Entertainment Complex", "City Center Clubs"],
-                            "art": ["Museum of Modern Art", "Fine Arts Gallery", "Design Museum", "Contemporary Art Space", "Sculpture Park"]
-                        }
-                        
-                        for cat in categories:
-                            cat_keywords = realistic_keywords.get(cat, ["Center", "Square", "Avenue", "Landmark"])
-                            random.shuffle(cat_keywords)
-                            for i in range(3):
-                                kw = cat_keywords[i % len(cat_keywords)]
-                                wiki_places.append(f"{city_name} {kw}")
-                                
-                    random.shuffle(wiki_places)
-                    idx = 0
-                    
-                    for cat in categories:
-                        for i in range(3):
-                            spot_name = wiki_places[idx % len(wiki_places)]
-                            idx += 1
-                            place_id = f"fallback-{city_key}-{cat}-{i+1}"
-                            poi_data = {
-                                "place_id": place_id,
-                                "name": spot_name,
-                                "category": cat,
-                                "rating": 4.5 + (random.random() * 0.5),
-                                "price_tier": 2,
-                                "lat": base_lat + (random.random() - 0.5) * 0.01,
-                                "lon": base_lon + (random.random() - 0.5) * 0.01,
-                                "address": f"Near {spot_name}, {city_name}",
-                                "opening_hours": {"open": "09:00", "close": "20:00"},
-                                "visit_duration_min": 60,
-                                "description": f"Explore {spot_name}, a highly recommended location to experience the {cat} of {city_name}.",
-                                "photo_url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80",
-                                "est_cost": float(random.randint(5, 40))
-                            }
-                            candidates.append(poi_data)
-                
-                for cat, places in results_dict.items():
-                    # Fallback to lower matching if model capitalized it differently
-                    cat_lower = cat.lower()
-                    if not isinstance(places, list):
-                        continue
-                        
-                    for idx, w in enumerate(places):
-                        w_title = w.get("name")
-                        
-                        # Generate a place_id
-                        place_id = f"ai-{city_key}-{cat_lower}-{idx+1}"
-                        
-                        poi_data = {
-                            "place_id": place_id,
-                            "name": w_title,
-                            "category": cat_lower,
-                            "rating": 4.8,
-                            "price_tier": 2,
-                            "lat": base_lat,
-                            "lon": base_lon,
-                            "address": w.get("location", f"{w_title}, {city_name}"),
-                            "opening_hours": {"open": "09:00", "close": "20:00"},
-                            "visit_duration_min": 90,
-                            "description": w.get("description", ""),
-                            "photo_url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80",
-                            "est_cost": 8.0
-                        }
-                        candidates.append(poi_data)
-            except Exception as e:
-                logger.error(f"Error fetching AI candidate places: {e}")
-                pass
-                # FALLBACK MOCKS
-                for cat in categories:
-                    for i in range(3):
-                        place_id = f"fallback-{city_key}-{cat}-{i+1}"
-                        spot_name = f"{city_name} {cat.title()} Spot {i+1}"
-                        poi_data = {
-                            "place_id": place_id,
-                            "name": spot_name,
-                            "category": cat,
-                            "rating": 4.5,
-                            "price_tier": 2,
-                            "lat": base_lat,
-                            "lon": base_lon,
-                            "address": f"Central {city_name}",
-                            "opening_hours": {"open": "09:00", "close": "20:00"},
-                            "visit_duration_min": 60,
-                            "description": f"A wonderful {cat} spot in {city_name}.",
-                            "photo_url": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80",
-                            "est_cost": 15.0
-                        }
-                        candidates.append(poi_data)
-                pass
-                
+        # Verify suggestions and fetch alternatives if needed
+        verified_candidates = await VerificationService.verify_and_fetch_places(
+            city_name=city_name,
+            base_lat=base_lat,
+            base_lon=base_lon,
+            categories=categories,
+            gemini_suggestions=gemini_suggestions,
+            db=db
+        )
+        
+        # Save to PlacesCache for legacy support if needed
         if db:
-            for poi_data in candidates:
+            for poi_data in verified_candidates:
                 try:
                     p_id = poi_data["place_id"]
+                    from app.models import PlacesCache
                     existing = db.query(PlacesCache).filter(PlacesCache.place_id == p_id).first()
                     if not existing:
                         db_place = PlacesCache(
@@ -610,7 +450,7 @@ class PlacesService:
             except Exception:
                 db.rollback()
 
-        return candidates[:limit]
+        return verified_candidates[:limit]
 
     @classmethod
     async def search_places(

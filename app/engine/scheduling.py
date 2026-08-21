@@ -85,9 +85,16 @@ class SchedulingEngine:
                     lunch_time_str = f"{curr_minutes // 60:02d}:{curr_minutes % 60:02d}:00"
                     
                     # Pick real food spot if available
-                    if real_food_spots and food_idx < len(real_food_spots):
-                        f_spot = real_food_spots[food_idx % len(real_food_spots)]
+                    f_spot = None
+                    while food_idx < len(real_food_spots):
+                        potential = real_food_spots[food_idx]
                         food_idx += 1
+                        if potential.get("place_id") not in used_place_ids:
+                            f_spot = potential
+                            used_place_ids.add(potential.get("place_id"))
+                            break
+
+                    if f_spot:
                         l_name = f_spot["name"]
                         l_lat = f_spot.get("lat") or last_lat or 0.0
                         l_lon = f_spot.get("lon") or last_lon or 0.0
@@ -114,7 +121,7 @@ class SchedulingEngine:
                         "lon": l_lon,
                         "address": l_addr,
                         "notes": l_notes,
-                        "photo_url": real_food_spots[(food_idx - 1) % len(real_food_spots)].get("photo_url", "") if real_food_spots and food_idx > 0 else "",
+                        "photo_url": f_spot.get("photo_url", "") if f_spot else "",
                         "user_edited": False,
                     })
                     order_idx += 1
@@ -126,9 +133,16 @@ class SchedulingEngine:
                 if not dinner_scheduled and curr_minutes >= 19 * 60 + 15:
                     dinner_time_str = f"{curr_minutes // 60:02d}:{curr_minutes % 60:02d}:00"
                     
-                    if real_food_spots:
-                        f_spot = real_food_spots[food_idx % len(real_food_spots)]
+                    f_spot = None
+                    while food_idx < len(real_food_spots):
+                        potential = real_food_spots[food_idx]
                         food_idx += 1
+                        if potential.get("place_id") not in used_place_ids:
+                            f_spot = potential
+                            used_place_ids.add(potential.get("place_id"))
+                            break
+
+                    if f_spot:
                         d_name = f_spot["name"]
                         d_lat = f_spot.get("lat") or last_lat or 0.0
                         d_lon = f_spot.get("lon") or last_lon or 0.0
@@ -155,7 +169,7 @@ class SchedulingEngine:
                         "lon": d_lon,
                         "address": d_addr,
                         "notes": d_notes,
-                        "photo_url": real_food_spots[(food_idx - 1) % len(real_food_spots)].get("photo_url", "") if real_food_spots and food_idx > 0 else "",
+                        "photo_url": f_spot.get("photo_url", "") if f_spot else "",
                         "user_edited": False,
                     })
                     order_idx += 1
@@ -170,8 +184,8 @@ class SchedulingEngine:
                         best_candidate = c
                         break
                 
-                if not best_candidate and scored_candidates:
-                    best_candidate = scored_candidates[pois_scheduled % len(scored_candidates)]
+                # If no unique unused candidates remain, we stop scheduling POIs for today to prevent duplicates
+                # We do not fallback to modulo!
 
                 if not best_candidate:
                     break

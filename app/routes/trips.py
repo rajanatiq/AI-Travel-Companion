@@ -11,6 +11,7 @@ from app.schemas import (
 )
 from app.security import get_current_user
 from app.services.places_service import PlacesService
+from app.services.image_service import ImageService
 from app.engine.scheduling import SchedulingEngine
 
 router = APIRouter(prefix="/trips", tags=["Trip Planning & Itinerary"])
@@ -79,6 +80,7 @@ def format_trip_detail(trip: Trip) -> TripDetailResponse:
         interests=trip.interests or [],
         pace=trip.pace,
         status=trip.status,
+        cover_photo=trip.cover_photo,
         created_at=trip.created_at,
         updated_at=trip.updated_at,
         days=days_list,
@@ -108,11 +110,14 @@ async def create_trip(
     if end_d < start_d:
         raise HTTPException(status_code=400, detail="end_date cannot be earlier than start_date")
 
+    cover_photo = await ImageService.get_city_image(req.destination, db)
+
     trip_id = uuid.uuid4()
     new_trip = Trip(
         id=trip_id,
         user_id=current_user.id,
         destination=req.destination,
+        cover_photo=cover_photo,
         start_date=start_d,
         end_date=end_d,
         budget_total=req.budget_total,
@@ -196,6 +201,7 @@ def list_trips(
             interests=t.interests or [],
             pace=t.pace,
             status=t.status,
+            cover_photo=t.cover_photo,
             created_at=t.created_at,
             updated_at=t.updated_at
         ) for t in trips
@@ -254,6 +260,7 @@ def update_trip(
         interests=trip.interests or [],
         pace=trip.pace,
         status=trip.status,
+        cover_photo=trip.cover_photo,
         created_at=trip.created_at,
         updated_at=trip.updated_at
     )

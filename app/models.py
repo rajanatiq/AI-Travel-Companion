@@ -73,6 +73,7 @@ class Trip(Base):
     interests = Column(JSONText, nullable=False, default=list)  # JSON array
     pace = Column(String(20), nullable=False, default="balanced")
     status = Column(String(20), nullable=False, default="draft", index=True)
+    cover_photo = Column(String(512), nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
     updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 
@@ -172,3 +173,27 @@ class Rating(Base):
 
     user = relationship("User", back_populates="ratings")
     trip = relationship("Trip", back_populates="ratings")
+
+class CityImageCache(Base):
+    __tablename__ = "city_image_cache"
+
+    id = Column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    city_name = Column(String(255), nullable=False, index=True)
+    image_url = Column(String(2048), nullable=False)
+    source = Column(String(50), nullable=False)
+    fetched_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+class VerifiedPlaceCache(Base):
+    __tablename__ = "verified_place_cache"
+
+    id = Column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    city_name = Column(String(255), nullable=False, index=True)
+    country = Column(String(255), nullable=True)
+    category = Column(String(50), nullable=False, index=True)
+    place_id = Column(String(255), nullable=False, unique=True)
+    name = Column(String(255), nullable=False)
+    lat = Column(Numeric(10, 6), nullable=True)
+    lng = Column(Numeric(10, 6), nullable=True)
+    type_kind = Column(String(100), nullable=True)
+    source = Column(String(50), nullable=False)
+    fetched_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
