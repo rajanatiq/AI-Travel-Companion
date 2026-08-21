@@ -57,7 +57,7 @@ Output format MUST be valid JSON matching this schema:
             prompt = cls.PROMPT_TEMPLATE.format(city=city, category=category)
             
             response = client.models.generate_content(
-                model='gemini-3.6-flash',
+                model='gemini-1.5-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
@@ -112,7 +112,7 @@ Output format MUST be valid JSON matching this schema:
             prompt = cls.PROMPT_BATCH_TEMPLATE.format(city=city, categories=", ".join(categories))
             
             response = client.models.generate_content(
-                model='gemini-3.6-flash',
+                model='gemini-1.5-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",

@@ -496,7 +496,7 @@
   "tokyo": {
     "history": [
       {
-        "name": "Sensō-ji Temple",
+        "name": "Sens\u014d-ji Temple",
         "address": "2-3-1 Asakusa, Taito City, Tokyo",
         "lat": 35.7147,
         "lon": 139.7967,
@@ -913,7 +913,7 @@
         "photo_url": "https://images.unsplash.com/photo-1594545032932-c0af37524660?w=700&q=80"
       },
       {
-        "name": "CÉ LA VI Rooftop Sky Bar & Lounge",
+        "name": "C\u00c9 LA VI Rooftop Sky Bar & Lounge",
         "address": "Address Sky View, Downtown Dubai, Dubai",
         "lat": 25.201,
         "lon": 55.271,
@@ -1455,7 +1455,7 @@
         "photo_url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=700&q=80"
       },
       {
-        "name": "Notre-Dame Cathedral & Île de la Cité",
+        "name": "Notre-Dame Cathedral & \u00cele de la Cit\u00e9",
         "address": "6 Parvis Notre-Dame, 75004 Paris",
         "lat": 48.853,
         "lon": 2.3499,
@@ -1466,7 +1466,7 @@
         "photo_url": "https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=700&q=80"
       },
       {
-        "name": "Arc de Triomphe & Champs-Élysées",
+        "name": "Arc de Triomphe & Champs-\u00c9lys\u00e9es",
         "address": "Pl. Charles de Gaulle, 75008 Paris",
         "lat": 48.8738,
         "lon": 2.295,
@@ -1490,8 +1490,8 @@
         "photo_url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80"
       },
       {
-        "name": "Musée d'Orsay",
-        "address": "1 Rue de la Légion d'Honneur, 75007 Paris",
+        "name": "Mus\u00e9e d'Orsay",
+        "address": "1 Rue de la L\u00e9gion d'Honneur, 75007 Paris",
         "lat": 48.8599,
         "lon": 2.3266,
         "cost": 16.0,
@@ -1504,7 +1504,7 @@
     "food": [
       {
         "name": "Le Comptoir du Relais Bistro",
-        "address": "9 Carrefour de l'Odéon, 75006 Paris",
+        "address": "9 Carrefour de l'Od\u00e9on, 75006 Paris",
         "lat": 48.852,
         "lon": 2.338,
         "cost": 35.0,
@@ -1540,14 +1540,14 @@
     ],
     "culture": [
       {
-        "name": "Montmartre & Sacré-Cœur Basilica",
+        "name": "Montmartre & Sacr\u00e9-C\u0153ur Basilica",
         "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
         "lat": 48.8867,
         "lon": 2.3431,
         "cost": 0.0,
         "duration": 90,
         "rating": 4.9,
-        "desc": "Bohemian hilltop village of artists at Place du Tertre leading to the white-domed Sacré-Cœur Basilica.",
+        "desc": "Bohemian hilltop village of artists at Place du Tertre leading to the white-domed Sacr\u00e9-C\u0153ur Basilica.",
         "photo_url": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?w=700&q=80"
       }
     ],
@@ -1588,6 +1588,412 @@
         "rating": 4.8,
         "desc": "Vibrant historic quartier buzzing with rooftop speakeasies, wine caves, and late-night jazz.",
         "photo_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=80"
+      }
+    ]
+  },
+  "new york": {
+    "history": [
+      {
+        "name": "Statue of Liberty",
+        "desc": "Iconic copper statue and national monument.",
+        "address": "Liberty Island",
+        "cost": 25,
+        "duration": 180,
+        "rating": 4.9,
+        "lat": 40.6892,
+        "lon": -74.0445
+      },
+      {
+        "name": "9/11 Memorial & Museum",
+        "desc": "Memorial and museum honoring the victims.",
+        "address": "180 Greenwich St",
+        "cost": 33,
+        "duration": 120,
+        "rating": 4.8,
+        "lat": 40.7115,
+        "lon": -74.0132
+      },
+      {
+        "name": "Empire State Building",
+        "desc": "Historical Art Deco skyscraper with observatory.",
+        "address": "350 5th Ave",
+        "cost": 44,
+        "duration": 90,
+        "rating": 4.7,
+        "lat": 40.7484,
+        "lon": -73.9857
+      }
+    ],
+    "nature": [
+      {
+        "name": "Central Park",
+        "desc": "Vast urban park in the middle of Manhattan.",
+        "address": "Manhattan",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.9,
+        "lat": 40.7812,
+        "lon": -73.9665
+      },
+      {
+        "name": "The High Line",
+        "desc": "Elevated linear park on a former railway.",
+        "address": "Chelsea",
+        "cost": 0,
+        "duration": 90,
+        "rating": 4.8,
+        "lat": 40.7479,
+        "lon": -74.0048
+      },
+      {
+        "name": "Brooklyn Botanic Garden",
+        "desc": "Beautiful 52-acre botanical garden.",
+        "address": "990 Washington Ave",
+        "cost": 18,
+        "duration": 120,
+        "rating": 4.8,
+        "lat": 40.6662,
+        "lon": -73.9626
+      }
+    ],
+    "culture": [
+      {
+        "name": "Metropolitan Museum of Art",
+        "desc": "One of the world's largest art museums.",
+        "address": "1000 5th Ave",
+        "cost": 30,
+        "duration": 180,
+        "rating": 4.9,
+        "lat": 40.7794,
+        "lon": -73.9632
+      },
+      {
+        "name": "Broadway Theatre District",
+        "desc": "The heart of commercial theatrical performances.",
+        "address": "Midtown Manhattan",
+        "cost": 100,
+        "duration": 180,
+        "rating": 4.8,
+        "lat": 40.759,
+        "lon": -73.9845
+      },
+      {
+        "name": "Museum of Modern Art (MoMA)",
+        "desc": "World-class collection of modern art.",
+        "address": "11 W 53rd St",
+        "cost": 28,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 40.7614,
+        "lon": -73.9776
+      }
+    ],
+    "food": [
+      {
+        "name": "Chelsea Market",
+        "desc": "Food hall, shopping mall, and television production facility.",
+        "address": "75 9th Ave",
+        "cost": 25,
+        "duration": 60,
+        "rating": 4.8,
+        "lat": 40.742,
+        "lon": -74.0048
+      },
+      {
+        "name": "Katz's Delicatessen",
+        "desc": "Iconic kosher-style deli known for pastrami.",
+        "address": "205 E Houston St",
+        "cost": 35,
+        "duration": 60,
+        "rating": 4.7,
+        "lat": 40.7222,
+        "lon": -73.9874
+      },
+      {
+        "name": "Joe's Pizza",
+        "desc": "Famous classic New York slice pizza.",
+        "address": "7 Carmine St",
+        "cost": 5,
+        "duration": 30,
+        "rating": 4.8,
+        "lat": 40.7306,
+        "lon": -74.0021
+      }
+    ],
+    "art": [
+      {
+        "name": "Guggenheim Museum",
+        "desc": "Modern and contemporary art in an iconic building.",
+        "address": "1071 5th Ave",
+        "cost": 25,
+        "duration": 120,
+        "rating": 4.6,
+        "lat": 40.783,
+        "lon": -73.959
+      },
+      {
+        "name": "Whitney Museum of American Art",
+        "desc": "Focuses on 20th- and 21st-century American art.",
+        "address": "99 Gansevoort St",
+        "cost": 25,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 40.7396,
+        "lon": -74.0089
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "Times Square at Night",
+        "desc": "Bustling, neon-lit commercial intersection and tourist hub.",
+        "address": "Midtown Manhattan",
+        "cost": 0,
+        "duration": 90,
+        "rating": 4.7,
+        "lat": 40.758,
+        "lon": -73.9855
+      },
+      {
+        "name": "Greenwich Village Jazz Clubs",
+        "desc": "Historic neighborhood known for its vibrant jazz scene.",
+        "address": "Greenwich Village",
+        "cost": 20,
+        "duration": 120,
+        "rating": 4.8,
+        "lat": 40.7336,
+        "lon": -74.0027
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Fifth Avenue",
+        "desc": "Famous shopping street with luxury boutiques.",
+        "address": "5th Ave",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.8,
+        "lat": 40.7744,
+        "lon": -73.9656
+      },
+      {
+        "name": "SoHo Shopping District",
+        "desc": "Trendy neighborhood with designer boutiques and galleries.",
+        "address": "SoHo",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 40.7233,
+        "lon": -74.003
+      }
+    ],
+    "adventure": [
+      {
+        "name": "Statue of Liberty Crown Tour",
+        "desc": "Climb up to the crown of the Statue of Liberty.",
+        "address": "Liberty Island",
+        "cost": 25,
+        "duration": 180,
+        "rating": 4.9,
+        "lat": 40.6892,
+        "lon": -74.0445
+      }
+    ]
+  },
+  "beijing": {
+    "history": [
+      {
+        "name": "Forbidden City",
+        "desc": "Vast imperial palace complex from the Ming dynasty.",
+        "address": "Dongcheng",
+        "cost": 9,
+        "duration": 240,
+        "rating": 4.9,
+        "lat": 39.9163,
+        "lon": 116.3972
+      },
+      {
+        "name": "Temple of Heaven",
+        "desc": "Imperial religious complex visited by emperors.",
+        "address": "Dongcheng",
+        "cost": 5,
+        "duration": 120,
+        "rating": 4.8,
+        "lat": 39.8822,
+        "lon": 116.4066
+      },
+      {
+        "name": "Summer Palace",
+        "desc": "Vast ensemble of lakes, gardens and palaces.",
+        "address": "Haidian District",
+        "cost": 8,
+        "duration": 180,
+        "rating": 4.8,
+        "lat": 39.9997,
+        "lon": 116.2677
+      }
+    ],
+    "nature": [
+      {
+        "name": "Jingshan Park",
+        "desc": "Imperial park offering panoramic views of the Forbidden City.",
+        "address": "Jingshan Front St",
+        "cost": 1,
+        "duration": 60,
+        "rating": 4.7,
+        "lat": 39.9255,
+        "lon": 116.3969
+      },
+      {
+        "name": "Beihai Park",
+        "desc": "One of the oldest imperial gardens in China.",
+        "address": "Xicheng",
+        "cost": 3,
+        "duration": 120,
+        "rating": 4.6,
+        "lat": 39.9284,
+        "lon": 116.3831
+      },
+      {
+        "name": "Olympic Forest Park",
+        "desc": "Expansive park built for the 2008 Olympics.",
+        "address": "Chaoyang",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 40.0163,
+        "lon": 116.392
+      }
+    ],
+    "culture": [
+      {
+        "name": "National Museum of China",
+        "desc": "Massive museum showcasing Chinese history and art.",
+        "address": "Tiananmen Square",
+        "cost": 0,
+        "duration": 180,
+        "rating": 4.8,
+        "lat": 39.9038,
+        "lon": 116.3976
+      },
+      {
+        "name": "798 Art Zone",
+        "desc": "Thriving contemporary art district in decommissioned factories.",
+        "address": "Chaoyang",
+        "cost": 0,
+        "duration": 150,
+        "rating": 4.8,
+        "lat": 39.9833,
+        "lon": 116.4883
+      },
+      {
+        "name": "Lama Temple (Yonghe Temple)",
+        "desc": "Renowned Tibetan Buddhist temple.",
+        "address": "Dongcheng",
+        "cost": 4,
+        "duration": 90,
+        "rating": 4.7,
+        "lat": 39.9472,
+        "lon": 116.4172
+      }
+    ],
+    "food": [
+      {
+        "name": "Quanjude Roast Duck",
+        "desc": "Famous restaurant known for its Peking duck.",
+        "address": "Dongcheng",
+        "cost": 40,
+        "duration": 90,
+        "rating": 4.7,
+        "lat": 39.9141,
+        "lon": 116.4116
+      },
+      {
+        "name": "Wangfujing Snack Street",
+        "desc": "Bustling street with exotic local street food.",
+        "address": "Wangfujing",
+        "cost": 15,
+        "duration": 60,
+        "rating": 4.5,
+        "lat": 39.9126,
+        "lon": 116.4111
+      },
+      {
+        "name": "Nanluoguxiang",
+        "desc": "Ancient alleyway packed with trendy cafes and snacks.",
+        "address": "Dongcheng",
+        "cost": 20,
+        "duration": 90,
+        "rating": 4.7,
+        "lat": 39.9366,
+        "lon": 116.4029
+      }
+    ],
+    "art": [
+      {
+        "name": "National Centre for the Performing Arts",
+        "desc": "Iconic egg-shaped arts center.",
+        "address": "Xicheng",
+        "cost": 5,
+        "duration": 90,
+        "rating": 4.8,
+        "lat": 39.9031,
+        "lon": 116.3897
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "Sanlitun Bar Street",
+        "desc": "Famous destination for nightlife and international dining.",
+        "address": "Chaoyang",
+        "cost": 30,
+        "duration": 120,
+        "rating": 4.6,
+        "lat": 39.9348,
+        "lon": 116.4552
+      },
+      {
+        "name": "Houhai Bar Street",
+        "desc": "Bars and cafes surrounding the beautiful Houhai lake.",
+        "address": "Xicheng",
+        "cost": 25,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 39.9382,
+        "lon": 116.3831
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Wangfujing Pedestrian Street",
+        "desc": "One of the most famous shopping streets in Beijing.",
+        "address": "Dongcheng",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.7,
+        "lat": 39.912,
+        "lon": 116.4111
+      },
+      {
+        "name": "Silk Market (Xiushui)",
+        "desc": "Popular indoor market known for knockoffs and silk.",
+        "address": "Chaoyang",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.4,
+        "lat": 39.9096,
+        "lon": 116.4468
+      }
+    ],
+    "adventure": [
+      {
+        "name": "Mutianyu Great Wall Hike",
+        "desc": "Less crowded, scenic section of the Great Wall.",
+        "address": "Huairou District",
+        "cost": 15,
+        "duration": 240,
+        "rating": 4.9,
+        "lat": 40.4319,
+        "lon": 116.5704
       }
     ]
   }
