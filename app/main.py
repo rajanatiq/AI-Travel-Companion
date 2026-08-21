@@ -14,24 +14,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger("ai_travel_backend")
 
-from app.database import engine, Base
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
     logger.info(f"Starting {settings.APP_NAME} v{settings.APP_VERSION} ({settings.ENVIRONMENT})")
-    try:
-        # Create tables automatically for SQLite
-        Base.metadata.create_all(bind=engine)
-        logger.info("Database tables initialized successfully.")
-    except Exception as e:
-        logger.warning(f"Could not create database tables: {e}")
-        
     is_connected = test_connection()
     if is_connected:
-        logger.info("Database is ready and operational.")
+        logger.info("SQL Server Database is ready and operational.")
     else:
-        logger.warning("Could not establish immediate DB connection.")
+        logger.warning("Could not establish immediate DB connection. Please verify SQL Server is running.")
     yield
     logger.info("Shutting down AI Travel Companion backend...")
 

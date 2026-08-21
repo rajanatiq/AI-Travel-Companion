@@ -14,13 +14,13 @@ class Settings(BaseSettings):
     PORT: int = 8000
     
     # SQL Server Database Connection
-    # DATABASE_URL: str = (
-    #     "mssql+pyodbc://localhost\SQLEXPRESS/AITravelCompanionDB"
-    #     "?driver=ODBC+Driver+18+for+SQL+Server&trusted_connection=yes&TrustServerCertificate=yes"
-    # )
+    DATABASE_URL: str = (
+        "mssql+pyodbc://localhost\SQLEXPRESS/AITravelCompanionDB"
+        "?driver=ODBC+Driver+18+for+SQL+Server&trusted_connection=yes&TrustServerCertificate=yes"
+    )
     
     # SQLite Database Connection (For Render/Online Demo)
-    DATABASE_URL: str = "sqlite:///./wanderlust.db"
+    # DATABASE_URL: str = "sqlite:///./wanderlust.db"
     
     # JWT Authentication
     SECRET_KEY: str = "ai-travel-companion-super-secret-key-2026-production"
